@@ -1,0 +1,5 @@
+#!/bin/sh
+# Begin section update-alternatives
+update-alternatives --install /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/python python /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/python.python 100
+update-alternatives --install /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/python-config python_config /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/python-config.python 100
+# End section update-alternatives

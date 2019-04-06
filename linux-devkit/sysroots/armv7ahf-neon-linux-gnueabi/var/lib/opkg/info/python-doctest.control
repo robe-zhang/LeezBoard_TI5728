@@ -1,0 +1,13 @@
+Package: python-doctest
+Version: 2.7.12-r1.0
+Description: Python framework for running examples in docstrings
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: armv7ahf-neon
+OE: python
+Homepage: http://www.python.org
+Depends: python-core, python-debugger, python-difflib, python-io, python-lang, python-re, python-unittest
+Source: python_2.7.12.bb

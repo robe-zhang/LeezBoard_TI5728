@@ -1,0 +1,14 @@
+Package: libicss-emac-staticdev
+Version: 01.00.00.11B-r0.0.0
+Description: icss-emac-lld version 01.00.00.11B-r0.0 - Development files (Static Libraries)
+ TI ICSS-EMAC low level driver library  This package contains static
+ libraries for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: icss-emac-lld
+Depends: libicss-emac-dev (= 01.00.00.11B-r0.0.0)
+Provides: icss-emac-lld-staticdev
+Source: icss-emac-lld_git.bb

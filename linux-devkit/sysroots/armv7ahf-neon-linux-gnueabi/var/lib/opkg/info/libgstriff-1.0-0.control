@@ -1,0 +1,14 @@
+Package: libgstriff-1.0-0
+Version: 1.8.3-r0.arago0.0
+Description: gstreamer gstriff-1.0 library
+ gstreamer gstriff-1.0 library
+Section: multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2+
+Architecture: armv7ahf-neon
+OE: gstreamer1.0-plugins-base
+Homepage: http://gstreamer.freedesktop.org/
+Depends: gstreamer1.0 (>= 1.8.3), libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libgstaudio-1.0-0 (>= 1.8.3), libgsttag-1.0-0 (>= 1.8.3), liborc-0.4-0 (>= 0.4.25), libpcre1 (>= 8.39), libz1 (>= 1.2.8)
+Provides: libgstriff-1.0
+Source: gstreamer1.0-plugins-base_1.8.3.bb

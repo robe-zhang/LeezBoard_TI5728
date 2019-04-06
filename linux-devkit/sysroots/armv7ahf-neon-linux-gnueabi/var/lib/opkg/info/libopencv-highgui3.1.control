@@ -1,0 +1,14 @@
+Package: libopencv-highgui3.1
+Version: 3.1+git0+9b88e8c746-r3.0
+Description: OpenCV opencv-highgui library
+ OpenCV opencv-highgui library
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: opencv
+Homepage: http://opencv.org/
+Depends: gstreamer1.0 (>= 1.8.3), libc6 (>= 2.23), libexif12 (>= 0.6.21), libgcc-s1 (>= 6.2.1), libglib-2.0-0 (>= 2.48.2), libgphoto2-6 (>= 2.5.8), libgphoto2-port12 (>= 2.5.8), libgstapp-1.0-0 (>= 1.8.3), libgstpbutils-1.0-0 (>= 1.8.3), libgstriff-1.0-0 (>= 1.8.3), libgstvideo-1.0-0 (>= 1.8.3), libopencv-core3.1 (>= 3.1+git0+9b88e8c746), libopencv-imgcodecs3.1 (>= 3.1+git0+9b88e8c746), libopencv-imgproc3.1 (>= 3.1+git0+9b88e8c746), libopencv-videoio3.1 (>= 3.1+git0+9b88e8c746), libstdc++6 (>= 6.2.1), libv4l (>= 1.10.1), qtbase (>= 5.7.1+git0+a55f36211e), tbb (>= 4.1)
+Provides: libopencv-highgui
+Source: opencv_3.1.bb

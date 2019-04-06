@@ -1,0 +1,1551 @@
+Package: nativesdk-libncursesw5
+Version: 6.0+20160625-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libtinfo5 (>= 6.0+20160625)
+Provides: nativesdk-ncurses-libncursesw
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100831
+Auto-Installed: yes
+
+Package: nativesdk-python3-core
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libz1 (>= 1.2.8), nativesdk-python3-codecs, nativesdk-python3-io, nativesdk-python3-lang, nativesdk-python3-math, nativesdk-python3-re, nativesdk-python3-reprlib, nativesdk-update-alternatives-opkg
+Recommends: nativesdk-python3-readline
+Provides: nativesdk-python3
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-path
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-cwd, nativesdk-perl-module-exporter, nativesdk-perl-module-file-basename, nativesdk-perl-module-file-spec, nativesdk-perl-module-strict, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-overloading
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-overload-numbers, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-difflib
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-lang, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python-stringold
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-tie-hash
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-re
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-opkg
+Version: 1:0.3.3-r0.0
+Depends: nativesdk-libarchive (>= 3.2.2), nativesdk-libbz2-1 (>= 1.0.6), nativesdk-libc6 (>= 2.24), nativesdk-libopkg1 (>= 0.3.3), nativesdk-libz1 (>= 1.2.8)
+Provides: nativesdk-opkg-collateral
+Replaces: nativesdk-opkg-collateral, nativesdk-opkg-nogpg
+Conflicts: nativesdk-opkg-collateral
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Conffiles:
+ /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/etc/opkg/opkg.conf 882b918d3b6f80af40390aaca25d3f2e
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-ti-cgt6x
+Version: 1:8.2.2-r0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100858
+Auto-Installed: yes
+
+Package: nativesdk-pkgconfig
+Version: 0.29.1+git0+87152c05be-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-pkgconfig(pkg-config)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-git
+Version: 2.9.3-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libcurl4 (>= 7.50.1), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-libz1 (>= 1.2.8)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100830
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-symbol
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-exporter
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-libreadline6
+Version: 6.3-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libtinfo5 (>= 6.0+20160625)
+Provides: nativesdk-readline
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Conffiles:
+ /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/etc/inputrc 27bb8dcd68671f6d61f6fda7333f3c26
+Installed-Time: 1522100865
+Auto-Installed: yes
+
+Package: nativesdk-python-smtpd
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-email, nativesdk-python-mime, nativesdk-python-netserver
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100865
+Auto-Installed: yes
+
+Package: nativesdk-python-core
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libz1 (>= 1.2.8), nativesdk-python-lang, nativesdk-python-re, nativesdk-update-alternatives-opkg
+Recommends: nativesdk-python-modules, nativesdk-python-readline
+Provides: nativesdk-python
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-thread-queue
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-attributes, nativesdk-perl-module-carp, nativesdk-perl-module-scalar-util, nativesdk-perl-module-strict, nativesdk-perl-module-threads-shared, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-qtbase-tools
+Version: 5.7.1+git0+a55f36211e-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libgcc1 (>= linaro-6.2), nativesdk-libstdc++6 (>= linaro-6.2), nativesdk-libz1 (>= 1.2.8)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100874
+Auto-Installed: yes
+
+Package: nativesdk-python-pickle
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-codecs, nativesdk-python-core, nativesdk-python-io, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-python-bsddb
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-python-multiprocessing
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-ctypes, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-mmap, nativesdk-python-pickle, nativesdk-python-threading
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-fcntl
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python3-math
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-python3-core, nativesdk-python3-crypt
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-python3-reprlib
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-libcrypto1.0.0
+Version: 1.0.2j-r0.arago0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Recommends: nativesdk-openssl-conf
+Provides: nativesdk-libcrypto
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-python-numbers
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-lang, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-dynaloader
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-config
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-libffi6
+Version: 3.2.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libffi
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-openssl
+Version: 1.0.2j-r0.arago0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-openssl-conf
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100861
+Auto-Installed: yes
+
+Package: nativesdk-python3-netclient
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core, nativesdk-python3-crypt, nativesdk-python3-datetime, nativesdk-python3-io, nativesdk-python3-lang, nativesdk-python3-logging, nativesdk-python3-mime
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-python-math
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-crypt
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-python3-pickle
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-codecs, nativesdk-python3-core, nativesdk-python3-io, nativesdk-python3-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-cmake
+Version: 3.6.1-r0.0
+Depends: nativesdk-libarchive (>= 3.2.2), nativesdk-libc6 (>= 2.24), nativesdk-libcurl4 (>= 7.50.1), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libgcc1 (>= linaro-6.2), nativesdk-libstdc++6 (>= linaro-6.2), nativesdk-libz1 (>= 1.2.8)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100828
+Auto-Installed: yes
+
+Package: nativesdk-python-compiler
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-python-codecs
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-lang
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-python-fcntl
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-ca-certificates
+Version: 20160104-r0.0
+Depends: nativesdk-openssl
+Status: install ok unpacked
+Architecture: x86_64-nativesdk
+Conffiles:
+ /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/etc/ca-certificates.conf 5fdf9ff0abe6ffe2f662da7285c8edca
+ /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/etc/ssl/certs/ca-certificates.crt 483d17e096daeb98d0e044a674090b3a
+Installed-Time: 1522100861
+Auto-Installed: yes
+
+Package: nativesdk-python-gdbm
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libgdbm4 (>= 1.12), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-io
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-syslog
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-libgdbm-compat4
+Version: 1.12-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libgdbm4 (>= 1.12)
+Provides: nativesdk-gdbm-compat
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-liblzo2-2
+Version: 2.09-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-lzo
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100830
+Auto-Installed: yes
+
+Package: nativesdk-python-robotparser
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-netclient
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100865
+Auto-Installed: yes
+
+Package: nativesdk-python-curses
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libncursesw5 (>= 6.0+20160625), nativesdk-libpanelw5 (>= 6.0+20160625), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libtinfo5 (>= 6.0+20160625), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-python-xmlrpc
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-lang, nativesdk-python-netserver, nativesdk-python-xml
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-libexpat1
+Version: 2.2.0-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-expat
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100826
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-text-parsewords
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-xsloader
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-dynaloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-netclient
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-crypt, nativesdk-python-datetime, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-logging, nativesdk-python-mime
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100838
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-compare
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-exporter
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-exporter-heavy
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-image
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-libtool
+Version: 2.4.6-r0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100830
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-class-struct
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-audio
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-term-cap
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-strict, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-pprint
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-libstdc++6
+Version: linaro-6.2-r2016.11.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libgcc1 (>= linaro-6.2)
+Provides: nativesdk-libstdc++
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-python3-codecs
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-python3-core, nativesdk-python3-lang
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-python-mmap
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-libelf1
+Version: 0.166-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libz1 (>= 1.2.8)
+Provides: nativesdk-libelf
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-find
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-config, nativesdk-perl-module-cwd, nativesdk-perl-module-exporter, nativesdk-perl-module-file-basename, nativesdk-perl-module-file-spec, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-bytes-heavy
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-b-deparse
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-b, nativesdk-perl-module-carp, nativesdk-perl-module-data-dumper, nativesdk-perl-module-feature, nativesdk-perl-module-overloading, nativesdk-perl-module-re, nativesdk-perl-module-strict, nativesdk-perl-module-vars, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python3-logging
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core, nativesdk-python3-io, nativesdk-python3-lang, nativesdk-python3-pickle, nativesdk-python3-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-python3-crypt
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-python3-core
+Recommends: nativesdk-openssl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-libarchive
+Version: 3.2.2-r0.0
+Depends: nativesdk-libbz2-1 (>= 1.0.6), nativesdk-libc6 (>= 2.24), nativesdk-libz1 (>= 1.2.8)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-attributes
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-ncurses-terminfo-base
+Version: 6.0+20160625-r0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100861
+Auto-Installed: yes
+
+Package: nativesdk-packagegroup-arago-qte-toolchain-host
+Version: 1.0-r10.0
+Depends: nativesdk-packagegroup-arago-sdk-host, nativesdk-qtbase-tools, nativesdk-qttools
+Status: install user installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100874
+
+Package: nativesdk-libgdbm4
+Version: 1.12-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-gdbm
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python3-mime
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core, nativesdk-python3-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-cwd
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-dynaloader, nativesdk-perl-module-exporter, nativesdk-perl-module-file-spec, nativesdk-perl-module-strict, nativesdk-perl-module-vars, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-plistlib
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-datetime, nativesdk-python-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-b
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-exporter-heavy
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-pod-usage
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-config, nativesdk-perl-module-exporter, nativesdk-perl-module-file-spec, nativesdk-perl-module-strict, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: packagegroup-arago-cross-canadian-am57xx-evm
+Version: 1.0-r7.0
+Depends: binutils-cross-canadian-arm, gcc-cross-canadian-arm, gdb-cross-canadian-arm
+Status: install user installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+
+Package: nativesdk-libssp0
+Version: linaro-6.2-r2016.11.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libssp
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-feature
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-libz1
+Version: 1.2.8-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-zlib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-python-argparse
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-codecs, nativesdk-python-core, nativesdk-python-textutils
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-python-terminal
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: binutils-cross-canadian-arm
+Version: b'2.27.0'-r8.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100875
+Auto-Installed: yes
+
+Package: nativesdk-python-sqlite3
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libsqlite3-0 (>= 3.14.1), nativesdk-python-core, nativesdk-python-crypt, nativesdk-python-datetime, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-threading, nativesdk-python-zlib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100869
+Auto-Installed: yes
+
+Package: nativesdk-python-mime
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-io
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100837
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-overload-numbers
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-errno
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python3-io
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-python3-core, nativesdk-python3-math
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-libcurl4
+Version: 7.50.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-libz1 (>= 1.2.8)
+Recommends: nativesdk-ca-certificates
+Provides: nativesdk-libcurl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100826
+Auto-Installed: yes
+
+Package: nativesdk-python-compression
+Version: 2.7.12-r1.0
+Depends: nativesdk-libbz2-1 (>= 1.0.6), nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-zlib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-threads-shared
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-scalar-util, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-posix
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-fcntl, nativesdk-perl-module-strict, nativesdk-perl-module-tie-hash, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-libncurses5
+Version: 6.0+20160625-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libtinfo5 (>= 6.0+20160625)
+Provides: nativesdk-ncurses-libncurses
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-python-distutils
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-email
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100843
+Auto-Installed: yes
+
+Package: nativesdk-python-compile
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-list-util
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-tests
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-modules
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100873
+Auto-Installed: yes
+
+Package: nativesdk-python-shell
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-re
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-term-cap, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-ti-cgt-pru
+Version: 2.2.1-r0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100847
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-copy
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-config, nativesdk-perl-module-exporter, nativesdk-perl-module-file-basename, nativesdk-perl-module-file-spec, nativesdk-perl-module-strict, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-netserver
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-netclient, nativesdk-python-shell, nativesdk-python-threading
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-scalar-util
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-list-util, nativesdk-perl-module-strict
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-db
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-basename
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-re, nativesdk-perl-module-strict, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-threads
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-config, nativesdk-perl-module-overload, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-python-textutils
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-io, nativesdk-python-re, nativesdk-python-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-data-dumper
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-b-deparse, nativesdk-perl-module-carp, nativesdk-perl-module-config, nativesdk-perl-module-constant, nativesdk-perl-module-exporter, nativesdk-perl-module-overload, nativesdk-perl-module-scalar-util, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-readline
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libreadline6 (>= 6.3), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100865
+Auto-Installed: yes
+
+Package: nativesdk-python-2to3
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-bytes
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-bytes-heavy, nativesdk-perl-module-carp
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-python-datetime
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-codecs, nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-libperl5
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2)
+Provides: nativesdk-perl-lib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: nativesdk-python-ctypes
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libffi6 (>= 3.2.1), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-mtd-utils-ubifs
+Version: 1.5.2-r0.arago1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-liblzo2-2 (>= 2.09), nativesdk-libz1 (>= 1.2.8), nativesdk-util-linux (>= 2.28.1)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-constant
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-strict, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-pkgutil
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libperl5 (>= 5.22.1), nativesdk-libssp0 (>= linaro-6.2)
+Provides: nativesdk-perl-module-config, nativesdk-perl-module-strict, nativesdk-perl-module-vars, nativesdk-perl-module-warnings, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: nativesdk-python-logging
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-pickle, nativesdk-python-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100837
+Auto-Installed: yes
+
+Package: nativesdk-python-hotshot
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python-misc
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libgdbm-compat4 (>= 1.12), nativesdk-libpython2.7-1.0 (>= 2.7.12)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-glob
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-sqlite3-tests
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-sqlite3
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100869
+Auto-Installed: yes
+
+Package: nativesdk-qttools
+Version: 5.7.1+git0+8575ed82ff-r0.0
+Recommends: nativesdk-qttools-plugins, nativesdk-qttools-qmlplugins
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100874
+Auto-Installed: yes
+
+Package: gcc-cross-canadian-arm
+Version: 6.2.1-r8.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100879
+Auto-Installed: yes
+
+Package: nativesdk-python-html
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python-modules
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-2to3, nativesdk-python-argparse, nativesdk-python-audio, nativesdk-python-bsddb, nativesdk-python-codecs, nativesdk-python-compile, nativesdk-python-compiler, nativesdk-python-compression, nativesdk-python-contextlib, nativesdk-python-core, nativesdk-python-crypt, nativesdk-python-ctypes, nativesdk-python-curses, nativesdk-python-datetime, nativesdk-python-db, nativesdk-python-debugger, nativesdk-python-difflib, nativesdk-python-distutils, nativesdk-python-doctest, nativesdk-python-email, nativesdk-python-fcntl, nativesdk-python-gdbm, nativesdk-python-hotshot, nativesdk-python-html, nativesdk-python-idle, nativesdk-python-image, nativesdk-python-importlib, nativesdk-python-io, nativesdk-python-json, nativesdk-python-lang, nativesdk-python-logging, nativesdk-python-mailbox, nativesdk-python-math, nativesdk-python-mime, nativesdk-python-misc, nativesdk-python-mmap, nativesdk-python-multiprocessing, nativesdk-python-netclient, nativesdk-python-netserver, nativesdk-python-numbers, nativesdk-python-pickle, nativesdk-python-pkgutil, nativesdk-python-plistlib, nativesdk-python-pprint, nativesdk-python-profile, nativesdk-python-pydoc, nativesdk-python-re, nativesdk-python-readline, nativesdk-python-resource, nativesdk-python-robotparser, nativesdk-python-shell, nativesdk-python-smtpd, nativesdk-python-sqlite3, nativesdk-python-sqlite3-tests, nativesdk-python-stringold, nativesdk-python-subprocess, nativesdk-python-syslog, nativesdk-python-terminal, nativesdk-python-tests, nativesdk-python-textutils, nativesdk-python-threading, nativesdk-python-tkinter, nativesdk-python-unittest, nativesdk-python-unixadmin, nativesdk-python-xml, nativesdk-python-xmlrpc, nativesdk-python-zlib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-libpython3.5m1.0
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libpython3
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-libtinfo5
+Version: 6.0+20160625-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Recommends: nativesdk-ncurses-terminfo-base
+Suggests: nativesdk-ncurses-terminfo
+Provides: nativesdk-ncurses-libtinfo
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100830
+Auto-Installed: yes
+
+Package: nativesdk-libpython2.7-1.0
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libpython2
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-gnu-config
+Version: 20150728+git0+b576fa87c1-r0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: nativesdk-libc6
+Version: 2.24-r0.0
+Provides: nativesdk-eglibc, nativesdk-glibc, rtld(GNU_HASH)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: gdb-cross-canadian-arm
+Version: linaro-7.8-r2014.09.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libncurses5 (>= 6.0+20160625), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libreadline6 (>= 6.3), nativesdk-libtinfo5 (>= 6.0+20160625), nativesdk-libz1 (>= 1.2.8), nativesdk-python3-codecs, nativesdk-python3-core, nativesdk-python3-importlib, nativesdk-python3-lang, nativesdk-python3-netclient, nativesdk-python3-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-python-subprocess
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-fcntl, nativesdk-python-io, nativesdk-python-pickle, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-python-unixadmin
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-python-profile
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-textutils
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-m4
+Version: 1.4.17-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100822
+Auto-Installed: yes
+
+Package: nativesdk-libbz2-1
+Version: 1.0.6-r5.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libbz2
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-python-io
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-python-contextlib, nativesdk-python-core, nativesdk-python-math, nativesdk-python-netclient, nativesdk-python-textutils
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100836
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-spec
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-file-spec-unix, nativesdk-perl-module-strict, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-clocl
+Version: 1.1.14.10-r0.0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-python-idle
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-tkinter
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-overload
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-mro, nativesdk-perl-module-overloading, nativesdk-perl-module-scalar-util, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-openssl-conf
+Version: 1.0.2j-r0.arago0.0
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Conffiles:
+ /home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/etc/ssl/openssl.cnf 7df26c55291b33344dc15e3935dabaf3
+Installed-Time: 1522100860
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-io-file
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-fcntl, nativesdk-perl-module-io-seekable, nativesdk-perl-module-selectsaver, nativesdk-perl-module-strict, nativesdk-perl-module-symbol
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python3-re
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-python-zlib
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libz1 (>= 1.2.8), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-python-threading
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-lang
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-python-pydoc
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-lang, nativesdk-python-re, nativesdk-python-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-python-xml
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100871
+Auto-Installed: yes
+
+Package: nativesdk-python-doctest
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-debugger, nativesdk-python-difflib, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-re, nativesdk-python-unittest
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-makedevs
+Version: 1.0.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100830
+Auto-Installed: yes
+
+Package: nativesdk-libpanelw5
+Version: 6.0+20160625-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libncursesw5 (>= 6.0+20160625), nativesdk-libtinfo5 (>= 6.0+20160625)
+Provides: nativesdk-ncurses-libpanelw
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100862
+Auto-Installed: yes
+
+Package: nativesdk-update-alternatives-opkg
+Version: 0.3.2+git0+3ffece9bf1-r0.0
+Provides: nativesdk-update-alternatives, nativesdk-update-alternatives-cworth
+Replaces: nativesdk-update-alternatives-cworth
+Conflicts: nativesdk-update-alternatives-cworth
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-python3-lang
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-python3-core, nativesdk-python3-importlib
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-clacc
+Version: 1.5.3.0-r0.1.0
+Depends: nativesdk-clocl, nativesdk-libc6 (>= 2.24), nativesdk-libelf1 (>= 0.166), nativesdk-libgcc1 (>= linaro-6.2), nativesdk-libstdc++6 (>= linaro-6.2)
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-automake
+Version: 1.15-r0.0
+Depends: nativesdk-autoconf, nativesdk-perl, nativesdk-perl-module-bytes, nativesdk-perl-module-data-dumper, nativesdk-perl-module-strict, nativesdk-perl-module-text-parsewords, nativesdk-perl-module-thread-queue, nativesdk-perl-module-threads, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-python-crypt
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-python-core
+Recommends: nativesdk-openssl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-packagegroup-arago-sdk-host
+Version: 1.0-r16.0
+Depends: nativesdk-autoconf, nativesdk-automake, nativesdk-clacc, nativesdk-clocl, nativesdk-cmake, nativesdk-git, nativesdk-libtool, nativesdk-makedevs, nativesdk-mtd-utils-ubifs, nativesdk-opkg, nativesdk-pkgconfig, nativesdk-python-distutils, nativesdk-shadow, nativesdk-ti-cgt-pru, nativesdk-ti-cgt6x
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100858
+Auto-Installed: yes
+
+Package: nativesdk-python-tkinter
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python3-importlib
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core, nativesdk-python3-lang
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-io-seekable
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-fcntl, nativesdk-perl-module-io-handle, nativesdk-perl-module-strict
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-libgcc1
+Version: linaro-6.2-r2016.11.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libgcc
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100825
+Auto-Installed: yes
+
+Package: nativesdk-libssl1.0.0
+Version: 1.0.2j-r0.arago0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j)
+Provides: nativesdk-libssl
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100826
+Auto-Installed: yes
+
+Package: nativesdk-python-email
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-audio, nativesdk-python-core, nativesdk-python-image, nativesdk-python-io, nativesdk-python-mime, nativesdk-python-netclient, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100842
+Auto-Installed: yes
+
+Package: nativesdk-python-resource
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100865
+Auto-Installed: yes
+
+Package: nativesdk-libsqlite3-0
+Version: 3:3.14.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libsqlite3
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100868
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-stat
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-class-struct, nativesdk-perl-module-constant, nativesdk-perl-module-exporter, nativesdk-perl-module-fcntl, nativesdk-perl-module-overload, nativesdk-perl-module-strict, nativesdk-perl-module-symbol, nativesdk-perl-module-vars, nativesdk-perl-module-warnings, nativesdk-perl-module-warnings-register
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-autoconf
+Version: 2.69-r11.0
+Depends: nativesdk-gnu-config, nativesdk-m4, nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-constant, nativesdk-perl-module-data-dumper, nativesdk-perl-module-errno, nativesdk-perl-module-exporter, nativesdk-perl-module-file-basename, nativesdk-perl-module-file-compare, nativesdk-perl-module-file-copy, nativesdk-perl-module-file-find, nativesdk-perl-module-file-glob, nativesdk-perl-module-file-path, nativesdk-perl-module-file-stat, nativesdk-perl-module-getopt-long, nativesdk-perl-module-io-file, nativesdk-perl-module-posix
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100824
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-mro
+Version: 5.22.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2), nativesdk-perl, nativesdk-perl-module-strict, nativesdk-perl-module-warnings, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python3-readline
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libncurses5 (>= 6.0+20160625), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libreadline6 (>= 6.3), nativesdk-python3-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-python-json
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-codecs, nativesdk-python-core, nativesdk-python-math, nativesdk-python-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-python-contextlib
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-python-unittest
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-difflib, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-pprint, nativesdk-python-shell, nativesdk-python-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-python3-datetime
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-python3-codecs, nativesdk-python3-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100880
+Auto-Installed: yes
+
+Package: nativesdk-python-lang
+Version: 2.7.12-r1.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100835
+Auto-Installed: yes
+
+Package: nativesdk-python3-stringold
+Version: 3.5.2-r1.0.0
+Depends: nativesdk-python3-core, nativesdk-python3-re
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100881
+Auto-Installed: yes
+
+Package: nativesdk-libopkg1
+Version: 1:0.3.3-r0.0
+Depends: nativesdk-libarchive (>= 3.2.2), nativesdk-libbz2-1 (>= 1.0.6), nativesdk-libc6 (>= 2.24), nativesdk-libz1 (>= 1.2.8)
+Provides: nativesdk-libopkg
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-file-spec-unix
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-constant, nativesdk-perl-module-cwd, nativesdk-perl-module-scalar-util, nativesdk-perl-module-strict, nativesdk-perl-module-vars, nativesdk-perl-module-xsloader
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-getopt-long
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-constant, nativesdk-perl-module-exporter, nativesdk-perl-module-overload, nativesdk-perl-module-pod-usage, nativesdk-perl-module-strict, nativesdk-perl-module-text-parsewords, nativesdk-perl-module-vars
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-python-debugger
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-io, nativesdk-python-lang, nativesdk-python-pprint, nativesdk-python-re, nativesdk-python-shell, nativesdk-python-stringold
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-carp
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-exporter, nativesdk-perl-module-strict, nativesdk-perl-module-warnings
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-io-handle
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-io, nativesdk-perl-module-io-file, nativesdk-perl-module-selectsaver, nativesdk-perl-module-strict, nativesdk-perl-module-symbol
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-shadow
+Version: 4.2.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-update-alternatives-opkg
+Status: install ok unpacked
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100843
+Auto-Installed: yes
+
+Package: nativesdk-perl-module-selectsaver
+Version: 5.22.1-r0.0
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-symbol
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100823
+Auto-Installed: yes
+
+Package: nativesdk-util-linux
+Version: 2.28.1-r0.0
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libncursesw5 (>= 6.0+20160625), nativesdk-libtinfo5 (>= 6.0+20160625), nativesdk-update-alternatives-opkg
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100833
+Auto-Installed: yes
+
+Package: nativesdk-python-mailbox
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core, nativesdk-python-mime
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100864
+Auto-Installed: yes
+
+Package: nativesdk-python-importlib
+Version: 2.7.12-r1.0
+Depends: nativesdk-python-core
+Status: install ok installed
+Architecture: x86_64-nativesdk
+Installed-Time: 1522100863
+Auto-Installed: yes
+

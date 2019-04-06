@@ -1,0 +1,15 @@
+Package: python3-core
+Version: 3.5.2-r1.0.0
+Description: Python interpreter and core modules
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: armv7ahf-neon
+OE: python3
+Homepage: http://www.python.org
+Depends: libc6 (>= 2.23), libpython3.5m1.0 (>= 3.5.2), libz1 (>= 1.2.8), python3-codecs, python3-io, python3-lang, python3-math, python3-re, python3-reprlib, update-alternatives-opkg
+Recommends: python3-readline
+Provides: python3
+Source: python3_3.5.2.bb

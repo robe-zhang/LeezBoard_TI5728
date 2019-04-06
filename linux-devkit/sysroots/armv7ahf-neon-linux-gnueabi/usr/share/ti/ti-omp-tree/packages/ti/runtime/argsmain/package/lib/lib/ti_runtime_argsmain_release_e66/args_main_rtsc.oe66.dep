@@ -1,0 +1,8 @@
+package/lib/lib/ti_runtime_argsmain_release_e66/./args_main_rtsc.oe66: args_main_rtsc.c /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/c6x.h ../../../ti/runtime/openmp/src/tomp_init.h ../../../ti/runtime/openmp/src/tomp_config.h /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/vect.h /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/stdbool.h /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/stdint.h 
+args_main_rtsc.c:
+/oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/c6x.h:
+../../../ti/runtime/openmp/src/tomp_init.h:
+../../../ti/runtime/openmp/src/tomp_config.h:
+/oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/vect.h:
+/oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/stdbool.h:
+/oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/cgt-c6x/include/stdint.h:

@@ -1,0 +1,13 @@
+Package: python3-compression
+Version: 3.5.2-r1.0.0
+Description: Python high-level compression support
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: armv7ahf-neon
+OE: python3
+Homepage: http://www.python.org
+Depends: libc6 (>= 2.23), libpython3.5m1.0 (>= 3.5.2), libz1 (>= 1.2.8), python3-codecs, python3-core, python3-importlib, python3-shell, python3-threading
+Source: python3_3.5.2.bb

@@ -1,0 +1,13 @@
+Package: nativesdk-perl-module-file-stat
+Version: 5.22.1-r0.0
+Description: perl module file-stat
+ perl module file-stat
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Artistic-1.0 | GPL-1.0+
+Architecture: x86_64-nativesdk
+OE: nativesdk-perl
+Homepage: http://www.perl.org/
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-class-struct, nativesdk-perl-module-constant, nativesdk-perl-module-exporter, nativesdk-perl-module-fcntl, nativesdk-perl-module-overload, nativesdk-perl-module-strict, nativesdk-perl-module-symbol, nativesdk-perl-module-vars, nativesdk-perl-module-warnings, nativesdk-perl-module-warnings-register
+Source: perl_5.22.1.bb

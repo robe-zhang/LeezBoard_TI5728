@@ -1,0 +1,13 @@
+Package: nativesdk-perl-module-io-handle
+Version: 5.22.1-r0.0
+Description: perl module io-handle
+ perl module io-handle
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Artistic-1.0 | GPL-1.0+
+Architecture: x86_64-nativesdk
+OE: nativesdk-perl
+Homepage: http://www.perl.org/
+Depends: nativesdk-perl, nativesdk-perl-module-carp, nativesdk-perl-module-exporter, nativesdk-perl-module-io, nativesdk-perl-module-io-file, nativesdk-perl-module-selectsaver, nativesdk-perl-module-strict, nativesdk-perl-module-symbol
+Source: perl_5.22.1.bb

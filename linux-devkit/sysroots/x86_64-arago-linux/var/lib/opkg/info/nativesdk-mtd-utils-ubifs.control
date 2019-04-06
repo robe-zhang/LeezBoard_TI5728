@@ -1,0 +1,13 @@
+Package: nativesdk-mtd-utils-ubifs
+Version: 1.5.2-r0.arago1.0
+Description: Tools for managing memory technology devices
+ Tools for managing memory technology devices.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: x86_64-nativesdk
+OE: nativesdk-mtd-utils
+Homepage: http://www.linux-mtd.infradead.org/
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-liblzo2-2 (>= 2.09), nativesdk-libz1 (>= 1.2.8), nativesdk-util-linux (>= 2.28.1)
+Source: mtd-utils_git.bb

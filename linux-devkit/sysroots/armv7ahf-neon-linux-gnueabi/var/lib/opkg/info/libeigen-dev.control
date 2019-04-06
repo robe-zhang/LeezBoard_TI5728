@@ -1,0 +1,15 @@
+Package: libeigen-dev
+Version: 3.2.8-r0.0
+Description: libeigen version 3.2.8-r0 - Development files
+ Eigen is a C++ template library for linear algebra: matrices, vectors,
+ numerical solvers, and related algorithms.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MPL-2.0
+Architecture: armv7ahf-neon
+OE: libeigen
+Homepage: http://eigen.tuxfamily.org/
+Source: libeigen_3.2.8.bb

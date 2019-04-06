@@ -1,0 +1,18 @@
+Package: libglib-2.0-dev
+Version: 1:2.48.2-r0.0
+Description: A general-purpose utility library - Development files
+ GLib is a general-purpose utility library, which provides many useful
+ data types, macros, type conversions, string utilities, file utilities, a
+ main loop abstraction, and so on.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2+ & BSD & PD
+Architecture: armv7ahf-neon
+OE: glib-2.0
+Homepage: https://developer.gnome.org/glib/
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (= 1:2.48.2-r0.0), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libz1 (>= 1.2.8)
+Recommends: bash-completion-dev, libc6-dev, libffi-dev, libpcre-dev, libz-dev
+Provides: glib-2.0-dev
+Source: glib-2.0_2.48.2.bb

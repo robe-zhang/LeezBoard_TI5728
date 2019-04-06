@@ -1,0 +1,19 @@
+Package: initscripts-dev
+Version: 1.0-r155.0
+Description: SysV init scripts - Development files
+ Initscripts provide the basic system startup initialization scripts for
+ the system.  These scripts include actions such as filesystem mounting,
+ fsck, RTC manipulation and other actions routinely performed at system
+ startup.  In addition, the scripts are also used during system shutdown
+ to reverse the actions performed at startup.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7ahf-neon
+OE: initscripts
+Depends: initscripts (= 1.0-r155.0)
+Recommends: initscripts-functions-dev, update-alternatives-opkg-dev
+Source: initscripts_1.0.bb

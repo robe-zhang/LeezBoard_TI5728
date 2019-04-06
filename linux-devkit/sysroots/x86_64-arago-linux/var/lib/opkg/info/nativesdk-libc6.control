@@ -1,0 +1,14 @@
+Package: nativesdk-libc6
+Version: 2.24-r0.0
+Description: GLIBC (GNU C Library)
+ The GNU C Library is used as the system C library in most systems with
+ the Linux kernel.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & LGPLv2.1
+Architecture: x86_64-nativesdk
+OE: nativesdk-glibc
+Homepage: http://www.gnu.org/software/libc/libc.html
+Provides: nativesdk-eglibc, nativesdk-glibc, rtld(GNU_HASH)
+Source: glibc_2.24.bb

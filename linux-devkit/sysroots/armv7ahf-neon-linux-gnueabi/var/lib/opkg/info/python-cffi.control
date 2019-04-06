@@ -1,0 +1,12 @@
+Package: python-cffi
+Version: 1.8.3-r0.0
+Description: Foreign Function Interface for Python calling C code
+ Foreign Function Interface for Python calling C code.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-cffi
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libpython2.7-1.0 (>= 2.7.12), python-core
+Source: python-cffi_1.8.3.bb

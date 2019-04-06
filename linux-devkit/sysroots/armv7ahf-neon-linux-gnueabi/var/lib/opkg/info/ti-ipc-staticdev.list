@@ -1,0 +1,5 @@
+/usr/lib/libtiipc.a
+/usr/lib/libtiipcutils.a
+/usr/lib/libmmrpc.a
+/usr/lib/libtitransportrpmsg.a
+/usr/lib/libtiipcutils_lad.a

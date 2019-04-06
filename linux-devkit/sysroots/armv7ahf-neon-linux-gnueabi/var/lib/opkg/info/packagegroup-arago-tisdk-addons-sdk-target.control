@@ -1,0 +1,12 @@
+Package: packagegroup-arago-tisdk-addons-sdk-target
+Version: 1.0-r38-tisdk28.0
+Description: packagegroup-arago-tisdk-addons-sdk-target version 1.0-r38-tisdk28
+ Task to install headers and libraries related to addons into the SDK
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am57xx_evm
+OE: packagegroup-arago-tisdk-addons-sdk-target
+Depends: can-utils-dev, cmem-dev, elfutils-dev, elfutils-staticdev, gdbserver-c6x-dev, icss-emac-lld-dev, icss-emac-lld-staticdev, libdrm-dev, libulm-dev, libulm-staticdev, opencv-dev, osal-dev, osal-staticdev, pruss-lld-dev, pruss-lld-staticdev, ti-ipc-dev, ti-ipc-staticdev, tiovx-lib-host-dev, tiovx-lib-host-staticdev, tiovx-sys-iface, voxelsdk-dev
+Source: packagegroup-arago-tisdk-addons-sdk-target.bb

@@ -1,0 +1,16 @@
+Package: ti-ipc-rtos-dev
+Version: 3.47.01.00-r0.r5.tisdk1.0
+Description: ti-ipc-rtos version 3.47.01.00-r0.r5.tisdk1 - Development files
+ TI Inter Process Communication (IPC) Mechanisms (for Uni- and Multi-
+ Processor Configurations)  This package contains symbolic links, header
+ files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: ti-ipc-rtos
+Homepage: http://processors.wiki.ti.com/index.php/Category:IPC
+Depends: ti-ipc-rtos (= 3.47.01.00-r0.r5.tisdk1.0)
+Recommends: ti-sysbios-dev
+Source: ti-ipc-rtos_git.bb

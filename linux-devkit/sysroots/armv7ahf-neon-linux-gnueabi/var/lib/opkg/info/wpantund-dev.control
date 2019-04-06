@@ -1,0 +1,15 @@
+Package: wpantund-dev
+Version: stable-r0.0
+Description: wpantund version stable-r0 - Development files
+ Openthread border controller  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Apache-2.0
+Architecture: armv7ahf-neon
+OE: wpantund
+Homepage: https://github.com/openthread
+Depends: wpantund (= stable-r0.0)
+Recommends: boost-dev, dbus-dev, dbus-lib-dev, libc6-dev, libcap-dev, libgcc-s-dev, liblzma-dev, libreadline-dev, libstdc++-dev, libsystemd-dev, ncurses-libncurses-dev
+Source: wpantund_git.bb

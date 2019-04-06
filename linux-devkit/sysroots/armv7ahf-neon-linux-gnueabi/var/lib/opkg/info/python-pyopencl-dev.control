@@ -1,0 +1,14 @@
+Package: python-pyopencl-dev
+Version: 2016.1-r0.0
+Description: OpenCL Integration for Python - Development files
+ OpenCL Integration for Python.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-pyopencl
+Depends: python-pyopencl (= 2016.1-r0.0)
+Recommends: libc6-dev, libgcc-s-dev, libopencl-dev, libpython2-dev, libstdc++-dev, opencl-runtime-dev, python-appdirs-dev, python-cffi-dev, python-core-dev, python-decorator-dev, python-dev, python-mako-dev, python-numpy-dev, python-pytest-dev, python-pytools-dev, python-six-dev
+Source: python-pyopencl_2016.1.bb

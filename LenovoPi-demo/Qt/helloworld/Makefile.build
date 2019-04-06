@@ -1,0 +1,19 @@
+-include ../../Rules.make
+
+ENV_SETUP ?= ../../../linux-devkit/environment-setup
+DESTDIR ?= 
+
+all: release
+
+.PHONY: qmake
+qmake : helloworld.pro
+	@. ${ENV_SETUP}; \
+	qmake CONFIG+=release helloworld.pro
+
+release : qmake
+	@. ${ENV_SETUP}; \
+	make
+
+clean : qmake
+	@. ${ENV_SETUP}; \
+	make distclean

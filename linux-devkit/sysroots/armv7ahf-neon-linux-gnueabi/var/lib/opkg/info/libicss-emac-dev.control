@@ -1,0 +1,16 @@
+Package: libicss-emac-dev
+Version: 01.00.00.11B-r0.0.0
+Description: icss-emac-lld version 01.00.00.11B-r0.0 - Development files
+ TI ICSS-EMAC low level driver library  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: icss-emac-lld
+Depends: libicss-emac1 (= 01.00.00.11B-r0.0.0)
+Recommends: common-csl-ip-dev, libc6-dev, libosal-dev, libpruss-dev
+Provides: icss-emac-lld-dev
+Source: icss-emac-lld_git.bb

@@ -1,0 +1,15 @@
+Package: libpruss-dev
+Version: 01.00.00.09A-r0.2.0
+Description: pruss-lld version 01.00.00.09A-r0.2 - Development files
+ TI PRUSS low level driver library  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: pruss-lld
+Depends: libpruss1 (= 01.00.00.09A-r0.2.0)
+Recommends: common-csl-ip-dev, libc6-dev, libosal-dev
+Provides: pruss-lld-dev
+Source: pruss-lld_git.bb

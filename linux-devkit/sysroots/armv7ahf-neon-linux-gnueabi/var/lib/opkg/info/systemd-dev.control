@@ -1,0 +1,22 @@
+Package: systemd-dev
+Version: 1:230+git0+3a74d4fc90-r0.arago5.0
+Description: A System and service manager - Development files
+ systemd is a system and service manager for Linux, compatible with SysV
+ and LSB init scripts. systemd provides aggressive parallelization
+ capabilities, uses socket and D-Bus activation for starting services,
+ offers on-demand starting of daemons, keeps track of processes using
+ Linux cgroups, supports snapshotting and restoring of the system state,
+ maintains mount and automount points and implements an elaborate
+ transactional dependency-based service control logic. It can work as a
+ drop-in replacement for sysvinit.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & LGPLv2.1
+Architecture: armv7ahf-neon
+OE: systemd
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Depends: libsystemd0, libudev1, systemd (= 1:230+git0+3a74d4fc90-r0.arago5.0)
+Recommends: acl-dev, base-files-dev, base-passwd-dev, bash-completion-dev, bash-dev, dbus-dev, initscripts-dev, kmod-dev, libacl-dev, libattr-dev, libc6-dev, libcap-dev, libcgroup-dev, libgcc-s-dev, libkmod-dev, liblzma-dev, libpam-dev, libreadline-dev, libsystemd-dev, libudev-dev, shadow-dev, shadow-sysroot-dev, systemd-container-dev, udev-dev, update-alternatives-opkg-dev, update-rc.d-dev, util-linux-dev, util-linux-libblkid-dev, util-linux-libmount-dev, util-linux-mount-dev, volatile-binds-dev, xz-dev
+Source: systemd_230.bb

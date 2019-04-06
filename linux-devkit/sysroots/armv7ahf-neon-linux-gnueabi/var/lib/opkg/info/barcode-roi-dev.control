@@ -1,0 +1,15 @@
+Package: barcode-roi-dev
+Version: 01.00.00-r1.0
+Description: barcode-roi version 01.00.00-r1 - Development files
+ Barcode demo to detect region of interest  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: barcode-roi
+Depends: barcode-roi (= 01.00.00-r1.0)
+Recommends: libc6-dev, libgcc-s-dev, libopencv-calib3d-dev, libopencv-core-dev, libopencv-features2d-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-ml-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev, libstdc++-dev, opencv-dev
+Source: barcode-roi_git.bb

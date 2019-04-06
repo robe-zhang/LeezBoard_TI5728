@@ -1,0 +1,4 @@
+/etc/modules-load.d/cryptodev.conf
+/lib/modules/4.9.69-g9ce43c71ae/extra/
+/lib/modules/4.9.69-g9ce43c71ae/extra/cryptodev.ko
+/etc/modules-load.d/

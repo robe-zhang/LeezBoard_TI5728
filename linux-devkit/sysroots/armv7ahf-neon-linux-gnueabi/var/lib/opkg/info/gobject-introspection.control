@@ -1,0 +1,13 @@
+Package: gobject-introspection
+Version: 1.48.0-r0.0
+Description: Middleware layer between GObject-using C libraries and language bindings
+ Middleware layer between GObject-using C libraries and language bindings.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2+ & GPLv2+
+Architecture: armv7ahf-neon
+OE: gobject-introspection
+Homepage: https://wiki.gnome.org/action/show/Projects/GObjectIntrospection
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libz1 (>= 1.2.8)
+Source: gobject-introspection_1.48.0.bb

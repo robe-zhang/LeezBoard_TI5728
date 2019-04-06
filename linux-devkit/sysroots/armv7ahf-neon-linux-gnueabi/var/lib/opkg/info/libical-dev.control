@@ -1,0 +1,16 @@
+Package: libical-dev
+Version: 2.0.0-r0.0
+Description: iCal and scheduling (RFC 2445, 2446, 2447) library - Development files
+ iCal and scheduling (RFC 2445, 2446, 2447) library.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1 | MPL-1
+Architecture: armv7ahf-neon
+OE: libical
+Homepage: https://github.com/libical/libical
+Depends: libical (= 2.0.0-r0.0)
+Recommends: icu-dev, libc6-dev, libgcc-s-dev, libicui18n-dev, libicuuc-dev, libstdc++-dev
+Source: libical_2.0.0.bb

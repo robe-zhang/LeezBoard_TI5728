@@ -1,0 +1,13 @@
+Package: curl
+Version: 7.50.1-r0.0
+Description: Command line tool and library for client-side URL transfers
+ Command line tool and library for client-side URL transfers.
+Section: console/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: curl
+Homepage: http://curl.haxx.se/
+Depends: libc6 (>= 2.23), libcrypto1.0.0 (>= 1.0.2j), libcurl4 (>= 7.50.1), libssl1.0.0 (>= 1.0.2j), libz1 (>= 1.2.8)
+Source: curl_7.50.1.bb

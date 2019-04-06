@@ -1,0 +1,16 @@
+Package: nativesdk-opkg
+Version: 1:0.3.3-r0.0
+Description: Open Package Manager
+ Open Package Manager.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: x86_64-nativesdk
+OE: nativesdk-opkg
+Homepage: http://code.google.com/p/opkg/
+Depends: nativesdk-libarchive (>= 3.2.2), nativesdk-libbz2-1 (>= 1.0.6), nativesdk-libc6 (>= 2.24), nativesdk-libopkg1 (>= 0.3.3), nativesdk-libz1 (>= 1.2.8)
+Provides: nativesdk-opkg-collateral
+Replaces: nativesdk-opkg-collateral, nativesdk-opkg-nogpg
+Conflicts: nativesdk-opkg-collateral
+Source: opkg_0.3.3.bb

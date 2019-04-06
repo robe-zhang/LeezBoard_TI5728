@@ -1,0 +1,15 @@
+Package: qtwebengine-dev
+Version: 5.7.1+git0+9cc97f0c63_b3c79e92f0-r0.arago0.0
+Description: QtWebEngine combines the power of Chromium and Qt - Development files
+ QtWebEngine combines the power of Chromium and Qt.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 & BSD & GPL-3.0 & The-Qt-Company-GPL-Exception-1.0
+Architecture: armv7ahf-neon
+OE: qtwebengine
+Depends: qtwebengine (= 5.7.1+git0+9cc97f0c63_b3c79e92f0-r0.arago0.0)
+Recommends: flac-dev, icu-dev, libc6-dev, libcairo-dev, libcap-dev, libdrm-dev, libevent-dev, libfontconfig-dev, libfreetype-dev, libgcc-s-dev, libjpeg-dev, libpixman-1-dev, libpng16-dev, libqt5webchannel-dev, libqt5xmlpatterns-dev, libspeex-dev, libstdc++-dev, libwebp-dev, libxml2-dev, libxslt-dev, openssl-dev, pango-dev, pciutils-dev, qtbase-dev, qtdeclarative-dev, qtlocation-dev, qtquickcontrols-dev, qtwebengine, qtwebengine-mkspecs, qtwebengine-qmldesigner, ti-sgx-ddk-um-dev
+Source: qtwebengine_git.bb

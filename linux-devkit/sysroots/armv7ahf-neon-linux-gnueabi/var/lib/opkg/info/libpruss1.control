@@ -1,0 +1,13 @@
+Package: libpruss1
+Version: 01.00.00.09A-r0.2.0
+Description: pruss-lld version 01.00.00.09A-r0.2
+ TI PRUSS low level driver library
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: pruss-lld
+Depends: libc6 (>= 2.23)
+Provides: pruss-lld
+Source: pruss-lld_git.bb

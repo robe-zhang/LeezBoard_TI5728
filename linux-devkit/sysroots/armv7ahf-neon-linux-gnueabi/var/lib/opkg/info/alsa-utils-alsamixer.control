@@ -1,0 +1,13 @@
+Package: alsa-utils-alsamixer
+Version: 1.1.2-r0.0
+Description: ncurses-based control for ALSA mixer and settings
+ ALSA sound utilities.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: alsa-utils
+Homepage: http://www.alsa-project.org
+Depends: libasound2 (>= 1.1.2), libc6 (>= 2.23), libform5 (>= 6.0+20160625), libmenu5 (>= 6.0+20160625), libncurses5 (>= 6.0+20160625), libpanel5 (>= 6.0+20160625), libtinfo5 (>= 6.0+20160625)
+Source: alsa-utils_1.1.2.bb

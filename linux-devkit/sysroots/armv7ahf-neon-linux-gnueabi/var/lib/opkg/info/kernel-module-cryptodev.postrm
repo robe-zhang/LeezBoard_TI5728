@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$D" ]; then
+	depmod -a 4.9.69-g9ce43c71ae
+else
+	depmodwrapper -a -b $D 4.9.69-g9ce43c71ae
+fi
+

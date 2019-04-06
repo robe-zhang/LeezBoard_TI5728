@@ -1,0 +1,17 @@
+Package: ti-sgx-ddk-um
+Version: 1.14.3699939-r28.tisdk6.0
+Description: ti-sgx-ddk-um version 1.14.3699939-r28.tisdk6
+ Userspace libraries for PowerVR SGX chipset on TI SoCs
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TSPA
+Architecture: am57xx_evm
+OE: ti-sgx-ddk-um
+Homepage: https://git.ti.com/graphics/omap5-sgx-ddk-um-linux
+Depends: libc6 (>= 2.23), libdrm-omap1 (>= 2.4.70), libdrm2 (>= 2.4.70), libffi6 (>= 3.2.1), libgbm2 (>= 10.0.0), libgcc-s1 (>= 6.2.1), libstdc++6 (>= 6.2.1), libudev1 (>= 230+git0+3a74d4fc90), ti-sgx-ddk-um-plugins, wayland (>= 1.11.0)
+Recommends: update-rc.d
+Provides: libGLESv2.so.1, libegl, libgles1, libgles2, omap5-sgx-ddk-um-linux
+Replaces: libegl, libgles1, libgles2, omap5-sgx-ddk-um-linux
+Conflicts: libegl, libgles1, libgles2, omap5-sgx-ddk-um-linux
+Source: ti-sgx-ddk-um_1.14.3699939.bb

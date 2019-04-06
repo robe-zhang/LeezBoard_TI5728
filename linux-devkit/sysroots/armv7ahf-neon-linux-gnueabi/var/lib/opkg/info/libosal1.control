@@ -1,0 +1,13 @@
+Package: libosal1
+Version: 01.00.00.10A-r0.1.0
+Description: osal version 01.00.00.10A-r0.1
+ TI OSAL library for Linux
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: osal
+Depends: libc6 (>= 2.23)
+Provides: osal
+Source: osal_git.bb

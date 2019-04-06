@@ -1,0 +1,291 @@
+TMS320C6x C/C++ Optimizer               v8.2.2
+Build Number 1RK5R-2LI-VATAQ-TAR-C08D
+Making tomp_semAcquire a function synonym of AcquireSpinLock
+Making tomp_semRelease a function synonym of ReleaseSpinLock
+Making tomp_eventPush a function synonym of queuePushDesc
+
+static unsigned char AcquireSpinLock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void ReleaseSpinLock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void __TI_omp_terminate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 62 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_exitGlobalNRT() (1 times)
+	tomp_eventFree() (3 times)
+	tomp_exitProcessing() (1 times)
+	tomp_sendExitEvents() (1 times)
+
+static struct _sw_queue_item *queuePop() is called from 1 sites in this file.
+    It appears to be inlineable (size = 31 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	queue_mutex_unlock() (1 times)
+	queue_mutex_lock() (1 times)
+
+static void queuePushDesc() is called from 2 sites in this file.
+    It appears to be inlineable (size = 19 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	queue_mutex_unlock() (1 times)
+	queue_mutex_lock() (1 times)
+
+static void queue_mutex_lock() is called from 2 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_mutex_lock() (1 times)
+
+static void queue_mutex_unlock() is called from 2 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_mutex_unlock() (1 times)
+
+static void tomp_clear_TeamState() is called from 1 sites in this file.
+    It appears to be inlineable (size = 11 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static struct _sw_queue_item *tomp_eventAlloc() is called from 2 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	queuePop() (1 times)
+
+static struct _sw_queue_item *tomp_eventAllocChecked() is called from 3 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_logError() (1 times)
+	tomp_eventAlloc() (1 times)
+
+static void tomp_eventFree() is called from 4 sites in this file.
+    It appears to be inlineable (size = 7 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	queuePushDesc() (1 times)
+
+static void tomp_eventPush() is called from 1 sites in this file.
+    It appears to be inlineable (size = 6 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	queuePushDesc() (1 times)
+
+static void *tomp_event_pointer() is called from 3 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void tomp_exitLocalX() is called from 0 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	exit() (1 times)
+	tomp_exitProcessing() (1 times)
+
+extern void tomp_exitProcessing() is called from 2 sites in this file.
+    It appears to be inlineable (size = 16 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_waitAtCoreBarrier() (1 times)
+	tomp_eventFree() (1 times)
+
+extern void tomp_initIcv() is called from 1 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void tomp_initIcvNoParse() is called from 0 sites in this file.
+    It appears to be inlineable (size = 19 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_initIcv() (1 times)
+
+extern int tomp_initLocal() is called from 0 sites in this file.
+    It appears to be inlineable (size = 20 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_clear_TeamState() (1 times)
+	tomp_alloc_TeamState() (1 times)
+
+extern int tomp_initParallel() is called from 0 sites in this file.
+    It appears to be inlineable (size = 117 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_allocInitTLSBlock() (2 times)
+	tomp_event_pointer() (3 times)
+	tomp_eventAllocChecked() (3 times)
+
+static void tomp_logError() is called from 1 sites in this file.
+    It appears to be inlineable (size = 20 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	exit() (1 times)
+	tomp_sendExitEvents() (1 times)
+	printf() (1 times)
+
+static void tomp_mfence() is called from 1 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void tomp_mutex_lock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_semAcquire() (2 times)
+
+static void tomp_mutex_unlock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_semRelease() (1 times)
+	tomp_mfence() (1 times)
+
+static unsigned char tomp_semAcquire() is called from 2 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	AcquireSpinLock() (1 times)
+
+static void tomp_semRelease() is called from 1 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	ReleaseSpinLock() (1 times)
+
+extern void tomp_sendExitEvents() is called from 2 sites in this file.
+    It appears to be inlineable (size = 30 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	tomp_eventPush() (1 times)
+	tomp_eventAlloc() (1 times)
+
+
+These functions may be recursive:
+	__TI_omp_terminate()
+	tomp_exitLocalX()
+	tomp_exitProcessing()
+	tomp_initLocal()
+	tomp_initParallel()
+
+Function tomp_eventAllocChecked() will be specialized on these parameters:
+	[1] size == 52u;
+
+Results of interprocedural value propagation:
+
+   static struct _sw_queue_item *tomp_eventAllocChecked() has these parameter attributes:
+      unsigned size :     size == 52u;
+      int line :          line%2 == 1;  line <= 179;  line >= 157;
+
+Function tomp_logError() will be specialized on these parameters:
+	[1] e == 2u;
+
+Results of interprocedural value propagation:
+
+   static void tomp_logError() has these parameter attributes:
+      unsigned e :        long double == 2u;
+      int line :          line%2 == 1;  line <= 179;  line >= 157;
+Inlineable function will be suppressed: tomp_eventPush()
+Inlineable function will be suppressed: tomp_event_pointer()
+Inlineable function will be suppressed: tomp_semRelease()
+Inlineable function will be suppressed: tomp_semAcquire()
+Inlineable function will be suppressed: tomp_mutex_unlock()
+Inlineable function will be suppressed: queue_mutex_unlock()
+Inlineable function will be suppressed: queue_mutex_lock()
+Inlineable function will be suppressed: tomp_mutex_lock()
+Inlineable function will be suppressed: tomp_eventAllocChecked()
+Inlineable function will be suppressed: tomp_eventAlloc()
+Inlineable function will be suppressed: tomp_eventFree()
+Inlineable function will be suppressed: tomp_clear_TeamState()
+Inlineable function will be suppressed: tomp_mfence()
+Inlineable function will be suppressed: queuePop()
+
+These external functions are called but not defined here:
+	printf()
+	exit()
+	tomp_allocInitTLSBlock()
+	tomp_alloc_TeamState()
+	tomp_waitAtCoreBarrier()
+	tomp_exitGlobalNRT()
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#2 in tomp_sendExitEvents() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#2 in tomp_sendExitEvents() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#1 in __TI_omp_terminate() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#1 in __TI_omp_terminate() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 8 memory accesses with 6 dependences.
+
+
+There are 14 memory accesses with 80 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 59 memory accesses with 602 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 6 memory accesses with 1 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 12 memory accesses with 21 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 37 memory accesses with 266 dependences.
+
+
+== END OF INFO OUTPUT==

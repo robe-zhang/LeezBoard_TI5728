@@ -1,0 +1,11 @@
+Package: goodix-fw
+Version: 1.0.0.0-r0.0
+Description: goodix-fw version 1.0.0.0-r0
+ Goodix GT9271 config firmware
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: goodix-fw
+Source: goodix-fw_git.bb

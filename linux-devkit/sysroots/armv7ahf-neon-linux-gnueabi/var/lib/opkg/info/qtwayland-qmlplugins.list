@@ -1,0 +1,5 @@
+/usr/lib/qt5/qml/QtWayland/Compositor/
+/usr/lib/qt5/qml/QtWayland/Compositor/libqwaylandcompositorplugin.so
+/usr/lib/qt5/qml/QtWayland/Compositor/plugins.qmltypes
+/usr/lib/qt5/qml/QtWayland/
+/usr/lib/qt5/qml/QtWayland/Compositor/qmldir

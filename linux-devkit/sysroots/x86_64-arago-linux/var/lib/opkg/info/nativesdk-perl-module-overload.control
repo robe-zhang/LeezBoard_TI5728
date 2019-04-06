@@ -1,0 +1,13 @@
+Package: nativesdk-perl-module-overload
+Version: 5.22.1-r0.0
+Description: perl module overload
+ perl module overload
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Artistic-1.0 | GPL-1.0+
+Architecture: x86_64-nativesdk
+OE: nativesdk-perl
+Homepage: http://www.perl.org/
+Depends: nativesdk-perl, nativesdk-perl-module-mro, nativesdk-perl-module-overloading, nativesdk-perl-module-scalar-util, nativesdk-perl-module-warnings-register
+Source: perl_5.22.1.bb

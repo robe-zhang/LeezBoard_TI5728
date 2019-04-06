@@ -1,0 +1,12 @@
+Package: packagegroup-arago-tisdk-multimedia-sdk-target
+Version: 1.0-r11.0
+Description: packagegroup-arago-tisdk-multimedia-sdk-target version 1.0-r11
+ Task to build and install header and libs into sdk
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am57xx_evm
+OE: packagegroup-arago-tisdk-multimedia-sdk-target
+Depends: barcode-roi-dev, hevc-arm-decoder-dev, hevc-arm-decoder-staticdev, packagegroup-arago-gst-sdk-target, qt-opencv-opencl-opengl-multithreaded-dev
+Source: packagegroup-arago-tisdk-multimedia-sdk-target.bb

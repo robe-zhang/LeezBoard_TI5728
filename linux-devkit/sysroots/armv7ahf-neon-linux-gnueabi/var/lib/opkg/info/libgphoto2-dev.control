@@ -1,0 +1,15 @@
+Package: libgphoto2-dev
+Version: 2.5.8-r0.tisdk0.0
+Description: libgphoto2 allows you to access digital cameras - Development files
+ libgphoto2 allows you to access digital cameras.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7ahf-neon
+OE: libgphoto2
+Depends: libgphoto2-6 (= 2.5.8-r0.tisdk0.0), libgphoto2-port12
+Recommends: bash-dev, jpeg-dev, libc6-dev, libexif-dev, libgphotoport-dev, libjpeg-dev, libltdl-dev, libtool-dev, libusb-1.0-dev, libxml2-dev, libz-dev
+Source: libgphoto2_2.5.8.bb

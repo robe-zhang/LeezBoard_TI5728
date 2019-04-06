@@ -1,0 +1,12 @@
+Package: packagegroup-arago-qte-toolchain-target
+Version: 1.0-r12.tisdk0.0
+Description: packagegroup-arago-qte-toolchain-target version 1.0-r12.tisdk0
+ Target packages for Qt Embedded SDK
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am57xx_evm
+OE: packagegroup-arago-qte-toolchain-target
+Depends: libsqlite3-dev, packagegroup-arago-standalone-sdk-target, qt3d-dev, qt3d-mkspecs, qtbase-dev, qtbase-mkspecs, qtbase-staticdev, qtdeclarative-dev, qtdeclarative-mkspecs, qtlocation-dev, qtlocation-mkspecs, qtscript-dev, qtscript-mkspecs, qtsensors-dev, qtsensors-mkspecs, qtsvg-dev, qtsvg-mkspecs, qtwebengine-dev, qtwebengine-mkspecs, qtxmlpatterns-dev, qtxmlpatterns-mkspecs
+Source: packagegroup-arago-qte-toolchain-target.bb

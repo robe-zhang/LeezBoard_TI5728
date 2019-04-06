@@ -1,0 +1,12 @@
+Package: libc6
+Version: 2.23-r0.arago36.0
+Description: external-linaro-toolchain version 2016.11-r0.arago36
+ external-linaro-toolchain version 2016.11-r0.arago36.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-2.1&GPL-3.0&GPL-3.0-with-GCC-exception&GPL-3.0
+Architecture: armv7ahf-neon
+OE: external-linaro-toolchain
+Provides: external-linaro-toolchain, glibc
+Source: external-linaro-toolchain.bb

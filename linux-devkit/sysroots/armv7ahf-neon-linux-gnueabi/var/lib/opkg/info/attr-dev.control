@@ -1,0 +1,16 @@
+Package: attr-dev
+Version: 2.4.47-r0.0
+Description: Utilities for manipulating filesystem extended attributes - Development files
+ Utilities for manipulating filesystem extended attributes.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1+ & GPLv2+
+Architecture: armv7ahf-neon
+OE: attr
+Homepage: http://savannah.nongnu.org/projects/attr/
+Depends: attr (= 2.4.47-r0.0), libattr1
+Recommends: libattr-dev, libc6-dev
+Source: attr_2.4.47.bb

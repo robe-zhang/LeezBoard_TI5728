@@ -1,0 +1,13 @@
+Package: hevc-arm-decoder
+Version: 01.00.00.01-r3.0
+Description: ARM HEVC Decoder with Unit Test Application
+ ARM HEVC Decoder with Unit Test Application.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TSPA
+Architecture: armv7ahf-neon
+OE: hevc-arm-decoder
+Homepage: https://gforge.ti.com/gf/project/am_multimedia/
+Depends: libc6 (>= 2.23)
+Source: hevc-arm-decoder_01.00.00.01.bb

@@ -1,0 +1,15 @@
+Package: qt3d-dev
+Version: 5.7.1+git0+0eac16fbda-r0.0
+Description: qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0 - Development files
+ qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 | GPL-2.0
+Architecture: armv7ahf-neon
+OE: qt3d
+Depends: qt3d (= 5.7.1+git0+0eac16fbda-r0.0)
+Recommends: libc6-dev, libgcc-s-dev, libstdc++-dev, qt3d, qt3d-mkspecs, qt3d-qmldesigner, qtbase-dev, qtdeclarative-dev, ti-sgx-ddk-um-dev
+Source: qt3d_git.bb

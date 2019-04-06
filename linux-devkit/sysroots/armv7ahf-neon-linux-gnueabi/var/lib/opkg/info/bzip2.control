@@ -1,0 +1,17 @@
+Package: bzip2
+Version: 1.0.6-r5.0
+Description: Very high-quality data compression program
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding. Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: bzip2
+Architecture: armv7ahf-neon
+OE: bzip2
+Homepage: http://www.bzip.org/
+Depends: libbz2-1 (>= 1.0.6), libc6 (>= 2.23), update-alternatives-opkg
+Source: bzip2_1.0.6.bb

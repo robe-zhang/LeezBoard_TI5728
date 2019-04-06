@@ -1,0 +1,13 @@
+Package: nativesdk-python-email
+Version: 2.7.12-r1.0
+Description: Python email support
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-python
+Homepage: http://www.python.org
+Depends: nativesdk-python-audio, nativesdk-python-core, nativesdk-python-image, nativesdk-python-io, nativesdk-python-mime, nativesdk-python-netclient, nativesdk-python-re
+Source: python_2.7.12.bb

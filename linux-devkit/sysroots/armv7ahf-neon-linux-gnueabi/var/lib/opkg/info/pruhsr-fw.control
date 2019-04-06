@@ -1,0 +1,11 @@
+Package: pruhsr-fw
+Version: 1:2.12.16-r0.0
+Description: pruhsr-fw version 2.12.16-r0
+ PRU HSR firmware for AM57xx
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TFL
+Architecture: am57xx_evm
+OE: pruhsr-fw
+Source: pruhsr-fw_git.bb

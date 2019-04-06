@@ -1,0 +1,17 @@
+obj/a15/debug/edma3_drv_adv.oa15fg: src/edma3_drv_adv.c \
+ ../../../../ti/sdo/edma3/drv/src/edma3.h \
+ ../../../../ti/sdo/edma3/drv/edma3_drv.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ ../../../../ti/sdo/edma3/rm/edma3_rm.h \
+ ../../../../ti/sdo/edma3/rm/edma3_common.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h \
+ ../../../../ti/sdo/edma3/rm/src/edma3_rl_cc.h \
+ ../../../../ti/sdo/edma3/rm/src/edma3resmgr.h \
+ ../../../../ti/sdo/edma3/rm/src/edma3_rl_tc.h

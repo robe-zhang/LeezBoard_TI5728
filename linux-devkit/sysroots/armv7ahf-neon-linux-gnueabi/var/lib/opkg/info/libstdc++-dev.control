@@ -1,0 +1,12 @@
+Package: libstdc++-dev
+Version: 6.2.1-r0.arago36.0
+Description: external-linaro-toolchain version 2016.11-r0.arago36
+ external-linaro-toolchain version 2016.11-r0.arago36.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPL-3.0-with-GCC-exception
+Architecture: armv7ahf-neon
+OE: external-linaro-toolchain
+Recommends: libc6-dev, libgcc-s-dev, linux-libc-headers-dev
+Source: external-linaro-toolchain.bb

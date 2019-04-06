@@ -1,0 +1,13 @@
+Package: nativesdk-git
+Version: 2.9.3-r0.0
+Description: Distributed version control system
+ Distributed version control system.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-git
+Homepage: http://git-scm.com
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libcurl4 (>= 7.50.1), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-libz1 (>= 1.2.8)
+Source: git_2.9.3.bb

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Begin section update-alternatives
+update-alternatives --remove  python /usr/bin/python.python
+update-alternatives --remove  python_config /usr/bin/python-config.python
+# End section update-alternatives

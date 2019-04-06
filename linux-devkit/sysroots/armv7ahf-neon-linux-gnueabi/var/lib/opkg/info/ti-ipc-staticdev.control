@@ -1,0 +1,15 @@
+Package: ti-ipc-staticdev
+Version: 3.47.01.00-r0.0.tisdk0.0
+Description: ti-ipc version 3.47.01.00-r0.0.tisdk0 - Development files (Static Libraries)
+ TI Inter Process Communication (IPC) Mechanisms (for Uni- and Multi-
+ Processor Configurations)  This package contains static libraries for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: ti-ipc
+Homepage: http://processors.wiki.ti.com/index.php/Category:IPC
+Depends: ti-ipc-dev (= 3.47.01.00-r0.0.tisdk0.0)
+Source: ti-ipc_git.bb

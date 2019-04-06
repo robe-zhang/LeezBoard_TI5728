@@ -1,0 +1,12 @@
+/usr/libexec/wpantund/ncp-spinel.so
+/usr/sbin/wpantund
+/usr/bin/wpanctl
+/usr/share/wpantund/
+/etc/dbus-1/system.d/wpantund.conf
+/usr/libexec/wpantund/ncp-dummy.so
+/usr/libexec/wpantund/
+/usr/bin/spi-hdlc-adapter
+/etc/wpantund.conf
+/usr/libexec/wpantund/ncp-spinel.la
+/usr/share/wpantund/wpanretain.sh
+/usr/libexec/wpantund/ncp-dummy.la

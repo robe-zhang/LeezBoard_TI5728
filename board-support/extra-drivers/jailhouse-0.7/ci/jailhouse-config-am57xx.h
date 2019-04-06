@@ -1,0 +1,3 @@
+#define CONFIG_ARM_GIC_V2		1
+#define CONFIG_MACH_AM57XX		1
+#define CONFIG_SERIAL_8250		1

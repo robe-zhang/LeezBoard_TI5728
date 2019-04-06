@@ -1,0 +1,16 @@
+Package: curl-dev
+Version: 7.50.1-r0.0
+Description: Command line tool and library for client-side URL transfers - Development files
+ Command line tool and library for client-side URL transfers.  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: curl
+Homepage: http://curl.haxx.se/
+Depends: curl (= 7.50.1-r0.0), libcurl4
+Recommends: libc6-dev, libcrypto-dev, libcurl-dev, libssl-dev, libz-dev, openssl-dev
+Source: curl_7.50.1.bb

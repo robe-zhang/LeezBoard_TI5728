@@ -1,0 +1,13 @@
+Package: alsa-utils
+Version: 1.1.2-r0.0
+Description: ALSA sound utilities
+ ALSA sound utilities.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: alsa-utils
+Homepage: http://www.alsa-project.org
+Depends: alsa-utils-aconnect, alsa-utils-alsactl, alsa-utils-alsaloop, alsa-utils-alsamixer, alsa-utils-alsatplg, alsa-utils-alsaucm, alsa-utils-amixer, alsa-utils-aplay, alsa-utils-aseqdump, alsa-utils-aseqnet, alsa-utils-iecset, alsa-utils-midi, alsa-utils-speakertest
+Source: alsa-utils_1.1.2.bb

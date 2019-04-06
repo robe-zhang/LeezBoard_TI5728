@@ -1,0 +1,14 @@
+Package: python-mako-dev
+Version: 1.0.4-r0.0
+Description: Templating library for Python - Development files
+ Templating library for Python.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-mako
+Depends: python-mako (= 1.0.4-r0.0)
+Recommends: python-dev, python-html-dev, python-netclient-dev, python-threading-dev
+Source: python-mako_1.0.4.bb

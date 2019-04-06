@@ -1,0 +1,18 @@
+Package: icu-dev
+Version: 57.1-r0.0
+Description: International Component for Unicode libraries - Development files
+ The International Component for Unicode (ICU) is a mature, portable set
+ of C/C++ and Java libraries for Unicode support, software
+ internationalization (I18N) and globalization (G11N), giving applications
+ the same results on all platforms.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: ICU
+Architecture: armv7ahf-neon
+OE: icu
+Homepage: http://site.icu-project.org/
+Depends: icu (= 57.1-r0.0), libicudata57, libicui18n57, libicuio57, libicule57, libiculx57, libicutu57, libicuuc57
+Recommends: libc6-dev, libgcc-s-dev, libicudata-dev, libicui18n-dev, libicuio-dev, libicule-dev, libiculx-dev, libicutu-dev, libicuuc-dev, libstdc++-dev
+Source: icu_57.1.bb

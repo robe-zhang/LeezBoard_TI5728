@@ -1,0 +1,11 @@
+Package: prueth-fw
+Version: 5.1.4-r0.0
+Description: prueth-fw version 5.1.4-r0
+ PRU Ethernet firmware for AM57xx, AM437x, AM335x and K2G
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TFL
+Architecture: am57xx_evm
+OE: prueth-fw
+Source: prueth-fw_git.bb

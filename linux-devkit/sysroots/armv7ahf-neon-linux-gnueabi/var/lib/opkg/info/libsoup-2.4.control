@@ -1,0 +1,14 @@
+Package: libsoup-2.4
+Version: 2.54.1-r0.0
+Description: An HTTP library implementation in C
+ An HTTP library implementation in C.
+Section: x11/gnome/libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2
+Architecture: armv7ahf-neon
+OE: libsoup-2.4
+Homepage: https://wiki.gnome.org/Projects/libsoup
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libsqlite3-0 (>= 3.14.1), libxml2 (>= 2.9.4), libz1 (>= 1.2.8)
+Recommends: glib-networking
+Source: libsoup-2.4_2.54.1.bb

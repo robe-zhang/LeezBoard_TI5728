@@ -1,0 +1,8 @@
+	if [ ! -e "$D/lib/modules/4.9.69-g9ce43c71ae" ]; then
+		mkdir -p $D/lib/modules/4.9.69-g9ce43c71ae
+	fi
+	if [ -n "$D" ]; then
+		depmodwrapper -a -b $D 4.9.69-g9ce43c71ae
+	else
+		depmod -a 4.9.69-g9ce43c71ae
+	fi

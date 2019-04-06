@@ -1,0 +1,14 @@
+Package: libopencv-optflow-dev
+Version: 3.1+git0+9b88e8c746-r3.0
+Description: OpenCV opencv-optflow development package
+ OpenCV opencv-optflow development package
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: opencv
+Homepage: http://opencv.org/
+Depends: libopencv-optflow3.1, opencv-dev
+Recommends: bzip2-dev, gstreamer1.0-dev, gstreamer1.0-plugins-base-dev, jpeg-dev, libc6-dev, libeigen-dev, libgcc-s-dev, libglib-2.0-dev, libgphoto2-dev, libopencl-dev, libopencv-calib3d-dev, libopencv-core-dev, libopencv-features2d-dev, libopencv-flann-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-ml-dev, libopencv-video-dev, libopencv-videoio-dev, libopencv-ximgproc-dev, libpng16-dev, libstdc++-dev, libticmem-dev, libtiff-dev, libtool-dev, libwebp-dev, libz-dev, protobuf-dev, python-dev, python-numpy-dev, qtbase-dev, qtwayland-dev, swig-dev, tbb-dev, v4l-utils-dev
+Source: opencv_3.1.bb

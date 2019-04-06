@@ -1,0 +1,13 @@
+Package: alsa-utils-aseqnet
+Version: 1.1.2-r0.0
+Description: Network client/server for ALSA sequencer
+ ALSA sound utilities.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: alsa-utils
+Homepage: http://www.alsa-project.org
+Depends: libasound2 (>= 1.1.2), libc6 (>= 2.23)
+Source: alsa-utils_1.1.2.bb

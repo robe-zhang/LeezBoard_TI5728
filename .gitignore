@@ -1,0 +1,4 @@
+linux-devkit.sh
+Image_debian9_desktop_burn_to_SDcard.img
+filesystem/arago-base-tisdk-image-am57xx-evm.ubi
+filesystem/tisdk-rootfs-image-am57xx-evm.tar.xz

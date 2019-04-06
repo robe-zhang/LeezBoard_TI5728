@@ -1,0 +1,16 @@
+Package: libgdk-pixbuf-2.0-dev
+Version: 2.34.0-r0.0
+Description: Image loading library for GTK+ - Development files
+ Image loading library for GTK+.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2
+Architecture: armv7ahf-neon
+OE: gdk-pixbuf
+Homepage: http://www.gtk.org/
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libgdk-pixbuf-2.0-0 (= 2.34.0-r0.0), libgdk-pixbuf-2.0-0 (>= 2.34.0), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libpng16-16 (>= 1.6.24), libz1 (>= 1.2.8)
+Recommends: gobject-introspection-dev, jpeg-dev, libc6-dev, libffi-dev, libglib-2.0-dev, libjpeg-dev, libpcre-dev, libpng16-dev, libz-dev
+Provides: gdk-pixbuf-dev
+Source: gdk-pixbuf_2.34.0.bb

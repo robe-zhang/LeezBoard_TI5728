@@ -1,0 +1,14 @@
+Package: libticmem1
+Version: 4.14.01.00+git0+b687f3c365-r1.0
+Description: cmem version 4.14.01.00+gitAUTOINC+b687f3c365-r1
+ The cmem component supports contiguous memory allocation from userspace
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7ahf-neon
+OE: cmem
+Homepage: http://processors.wiki.ti.com/index.php/Category:CMEM
+Depends: cmem-mod, libc6 (>= 2.23)
+Provides: cmem
+Source: cmem_git.bb

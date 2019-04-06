@@ -1,0 +1,13 @@
+Package: gstreamer1.0-plugins-good-multipart
+Version: 1.8.3-r0.arago0.0
+Description: GStreamer plugin for multipart
+ GStreamer plugin for multipart
+Section: multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+
+Architecture: armv7ahf-neon
+OE: gstreamer1.0-plugins-good
+Homepage: http://gstreamer.freedesktop.org/
+Depends: gstreamer1.0 (>= 1.8.3), libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39)
+Source: gstreamer1.0-plugins-good_1.8.3.bb

@@ -1,0 +1,13 @@
+Package: nativesdk-perl-module-file-spec-unix
+Version: 5.22.1-r0.0
+Description: perl module file-spec-unix
+ perl module file-spec-unix
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Artistic-1.0 | GPL-1.0+
+Architecture: x86_64-nativesdk
+OE: nativesdk-perl
+Homepage: http://www.perl.org/
+Depends: nativesdk-perl, nativesdk-perl-module-constant, nativesdk-perl-module-cwd, nativesdk-perl-module-scalar-util, nativesdk-perl-module-strict, nativesdk-perl-module-vars, nativesdk-perl-module-xsloader
+Source: perl_5.22.1.bb

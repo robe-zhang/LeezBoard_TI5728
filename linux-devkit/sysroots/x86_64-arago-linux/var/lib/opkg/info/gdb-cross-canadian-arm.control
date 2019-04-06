@@ -1,0 +1,13 @@
+Package: gdb-cross-canadian-arm
+Version: linaro-7.8-r2014.09.0
+Description: GNU debugger (cross-canadian gdb for arm target)
+ GNU debugger (cross-canadian gdb for arm target).
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & GPLv3 & LGPLv2 & LGPLv3
+Architecture: x86_64-nativesdk
+OE: gdb-cross-canadian-arm
+Homepage: http://www.gnu.org/software/gdb/
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libncurses5 (>= 6.0+20160625), nativesdk-libpython3.5m1.0 (>= 3.5.2), nativesdk-libreadline6 (>= 6.3), nativesdk-libtinfo5 (>= 6.0+20160625), nativesdk-libz1 (>= 1.2.8), nativesdk-python3-codecs, nativesdk-python3-core, nativesdk-python3-importlib, nativesdk-python3-lang, nativesdk-python3-netclient, nativesdk-python3-re
+Source: gdb-cross-canadian_linaro-7.8.bb

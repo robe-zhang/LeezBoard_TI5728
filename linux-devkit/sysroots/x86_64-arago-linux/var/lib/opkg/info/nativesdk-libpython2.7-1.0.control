@@ -1,0 +1,14 @@
+Package: nativesdk-libpython2.7-1.0
+Version: 2.7.12-r1.0
+Description: The Python Programming Language
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-python
+Homepage: http://www.python.org
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libpython2
+Source: python_2.7.12.bb

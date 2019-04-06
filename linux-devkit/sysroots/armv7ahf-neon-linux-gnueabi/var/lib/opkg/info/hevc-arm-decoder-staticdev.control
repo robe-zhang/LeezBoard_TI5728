@@ -1,0 +1,14 @@
+Package: hevc-arm-decoder-staticdev
+Version: 01.00.00.01-r3.0
+Description: ARM HEVC Decoder with Unit Test Application - Development files (Static Libraries)
+ ARM HEVC Decoder with Unit Test Application.  This package contains
+ static libraries for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TSPA
+Architecture: armv7ahf-neon
+OE: hevc-arm-decoder
+Homepage: https://gforge.ti.com/gf/project/am_multimedia/
+Depends: hevc-arm-decoder-dev (= 01.00.00.01-r3.0)
+Source: hevc-arm-decoder_01.00.00.01.bb

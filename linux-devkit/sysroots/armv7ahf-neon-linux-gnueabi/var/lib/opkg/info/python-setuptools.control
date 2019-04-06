@@ -1,0 +1,16 @@
+Package: python-setuptools
+Version: 22.0.5-r0.0
+Description: Download, build, install, upgrade, and uninstall Python packages
+ Download, build, install, upgrade, and uninstall Python packages.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-setuptools
+Homepage: https://pypi.python.org/pypi/setuptools
+Depends: python-compile, python-compression, python-ctypes, python-distutils, python-email, python-html, python-netserver, python-numbers, python-pkgutil, python-plistlib, python-shell, python-stringold, python-subprocess, python-unittest
+Provides: python-distribute
+Replaces: python-distribute
+Conflicts: python-distribute
+Source: python-setuptools_22.0.5.bb

@@ -1,0 +1,14 @@
+Package: can-utils-dev
+Version: 0.0+gitr0+5b518a0a5f-r0.arago0.0
+Description: Linux CAN network development utilities - Development files
+ Linux CAN network development  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & BSD-3-Clause
+Architecture: armv7ahf-neon
+OE: can-utils
+Depends: can-utils (= 0.0+gitr0+5b518a0a5f-r0.arago0.0)
+Recommends: libc6-dev, libsocketcan-dev
+Source: can-utils_git.bb

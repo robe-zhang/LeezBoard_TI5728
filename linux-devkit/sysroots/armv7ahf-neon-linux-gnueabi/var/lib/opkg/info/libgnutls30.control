@@ -1,0 +1,14 @@
+Package: libgnutls30
+Version: 3.5.3-r0.arago0.0
+Description: GNU Transport Layer Security Library
+ GNU Transport Layer Security Library.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1+
+Architecture: armv7ahf-neon
+OE: gnutls
+Homepage: http://www.gnu.org/software/gnutls/
+Depends: libc6 (>= 2.23), libgmp10 (>= 6.1.1), libidn11 (>= 1.33), libz1 (>= 1.2.8), nettle (>= 3.2)
+Provides: gnutls
+Source: gnutls_3.5.3.bb

@@ -1,0 +1,15 @@
+Package: nativesdk-util-linux
+Version: 2.28.1-r0.0
+Description: A suite of basic system administration utilities
+ Util-linux includes a suite of basic system administration utilities
+ commonly found on most Linux systems.  Some of the more important
+ utilities include disk partitioning, kernel message management,
+ filesystem creation, and system login.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+ & BSD
+Architecture: x86_64-nativesdk
+OE: nativesdk-util-linux
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libncursesw5 (>= 6.0+20160625), nativesdk-libtinfo5 (>= 6.0+20160625), nativesdk-update-alternatives-opkg
+Source: util-linux_2.28.1.bb

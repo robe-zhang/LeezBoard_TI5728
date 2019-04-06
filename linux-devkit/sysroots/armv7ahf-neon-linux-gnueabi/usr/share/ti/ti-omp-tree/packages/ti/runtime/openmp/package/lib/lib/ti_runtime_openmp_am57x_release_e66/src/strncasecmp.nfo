@@ -1,0 +1,22 @@
+TMS320C6x C/C++ Optimizer               v8.2.2
+Build Number 1RK5R-2LI-VATAQ-TAR-C08D
+
+extern int strncasecmp() is called from 0 sites in this file.
+    It appears to be inlineable (size = 37 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	tolower() (2 times)
+
+static int tolower() is called from 2 sites in this file.
+    It appears to be inlineable (size = 15 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+Inlineable function will be suppressed: tolower()
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+== END OF INFO OUTPUT==

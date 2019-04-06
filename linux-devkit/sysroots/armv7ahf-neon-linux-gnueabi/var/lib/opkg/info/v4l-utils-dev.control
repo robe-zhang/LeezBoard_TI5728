@@ -1,0 +1,14 @@
+Package: v4l-utils-dev
+Version: 1.10.1-r0.0
+Description: v4l2 and IR applications - Development files
+ v4l2 and IR applications.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & LGPLv2.1
+Architecture: armv7ahf-neon
+OE: v4l-utils
+Depends: libv4l, media-ctl, v4l-utils (= 1.10.1-r0.0)
+Recommends: jpeg-dev, libc6-dev, libgcc-s-dev, libjpeg-dev, libstdc++-dev, libv4l-dev
+Source: v4l-utils_1.10.1.bb

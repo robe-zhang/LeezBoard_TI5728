@@ -1,0 +1,15 @@
+Package: qtlocation-dev
+Version: 5.7.1+git0+de5be121d8-r0.0
+Description: qtlocation version 5.7.1+gitAUTOINC+de5be121d8-r0 - Development files
+ qtlocation version 5.7.1+gitAUTOINC+de5be121d8-r0.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GFDL-1.3 & BSD & (LGPL-2.1 & The-Qt-Company-Qt-LGPL-Exception-1.1 | LGPL-3.0) | GPL-2.0
+Architecture: armv7ahf-neon
+OE: qtlocation
+Depends: qtlocation (= 5.7.1+git0+de5be121d8-r0.0)
+Recommends: libc6-dev, libgcc-s-dev, libqt5xmlpatterns-dev, libstdc++-dev, qtbase-dev, qtdeclarative-dev, qtlocation, qtlocation-mkspecs, qtlocation-qmldesigner, qtquickcontrols-dev, ti-sgx-ddk-um-dev
+Source: qtlocation_git.bb

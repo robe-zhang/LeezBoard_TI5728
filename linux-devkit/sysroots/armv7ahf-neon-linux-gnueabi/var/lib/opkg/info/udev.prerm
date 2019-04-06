@@ -1,0 +1,6 @@
+#!/bin/sh
+# Begin section update-rc.d
+if [ -z "$D" -a -x "/etc/init.d/systemd-udevd" ]; then
+	/etc/init.d/systemd-udevd stop || :
+fi
+# End section update-rc.d

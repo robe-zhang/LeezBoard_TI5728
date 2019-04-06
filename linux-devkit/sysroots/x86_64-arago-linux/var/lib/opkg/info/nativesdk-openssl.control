@@ -1,0 +1,13 @@
+Package: nativesdk-openssl
+Version: 1.0.2j-r0.arago0.0
+Description: Secure Socket Layer
+ Secure Socket Layer (SSL) binary and related cryptographic tools.
+Section: libs/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: openssl
+Architecture: x86_64-nativesdk
+OE: nativesdk-openssl
+Homepage: http://www.openssl.org/
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-openssl-conf
+Source: openssl_1.0.2j.bb

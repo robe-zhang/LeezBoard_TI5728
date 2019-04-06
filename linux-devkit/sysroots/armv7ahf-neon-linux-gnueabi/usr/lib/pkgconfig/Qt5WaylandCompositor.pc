@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 WaylandCompositor
+Description: Qt WaylandCompositor module
+Version: 5.7.1
+Libs: -lQt5WaylandCompositor 
+Libs.private: -L/usr/lib -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lpthread -lwayland-server -lxkbcommon -lGLESv2 -lsrv_um  
+Cflags: -I${includedir}/QtWaylandCompositor -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Quick Qt5Qml
+

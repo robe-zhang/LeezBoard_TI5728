@@ -1,0 +1,13 @@
+Package: nativesdk-python-tests
+Version: 2.7.12-r1.0
+Description: Python tests
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-python
+Homepage: http://www.python.org
+Depends: nativesdk-python-core, nativesdk-python-modules
+Source: python_2.7.12.bb

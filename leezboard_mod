@@ -1,0 +1,671 @@
+#!/bin/bash
+
+# ===================================================build SDK
+# robe
+function echo_s()
+{
+	echo -ne "\e[32m"
+	echo -n $*
+	echo -e "\e[0m"
+}
+
+function echo_f()
+{
+	echo -ne "\e[31m"
+	echo -n $*
+	echo -e "\e[0m"
+}
+
+function echo_i()
+{
+	echo -ne "\e[0m"
+	echo -n $*
+	echo -e "\e[0m"
+}
+
+function check_sdk()
+{
+	echo_f please check:
+	echo_f 1.TI SDK is installed.
+	echo_f 2.uboot DIR is not moved.
+	echo_f 3.PATCH LenovoPi_patch_4.3.
+	echo_f and then try to rebuild again.
+}
+
+
+# make uboot
+function make_uboot()
+{
+if [ -d ${UBOOTDIR} ]; then
+	pushd ${UBOOTDIR}
+	make distclean
+	make ${UBOOT_defconfig}
+	make
+	if ! [[ $? -eq 0 ]]; then
+		echo_f build UBOOT fail.
+		exit 1
+	fi
+	popd
+	echo_s build UBOOT successful.
+else
+	echo_f  ${UBOOTDIR} is not exist.
+	check_sdk
+	exit 11
+fi
+}
+
+# make linux menuconfig
+function make_linux_menuconfig()
+{
+if [ -d ${LINUXDIR} ]; then
+	pushd ${LINUXDIR}
+	make ${LINUX_defconfig}
+	make menuconfig
+	sudo cp .config arch/arm/configs/${LINUX_defconfig}
+	popd
+	echo_s save .config to arch/arm/configs/${LINUX_defconfig}
+else
+	echo_f  ${LINUXDIR} is not exist.
+	check_sdk
+	exit 12
+fi	
+}
+
+# make linux
+function make_linux()
+{
+if [ -d ${LINUXDIR} ]; then
+	pushd ${LINUXDIR}
+	make ${LINUX_defconfig}
+	make zImage -j2
+	if ! [[ $? -eq 0 ]]; then
+		echo_f build LINUX fail.
+		exit 2
+	fi
+	# make LenovoPi.dtb
+	# make modules
+	popd
+	echo_s build LINUX successful.
+else
+	echo_f  ${LINUXDIR} is not exist.
+	check_sdk
+	exit 12
+fi
+}
+
+# make DTB
+function make_dtb()
+{
+if [ -d ${LINUXDIR} ]; then
+	pushd ${LINUXDIR}
+	make ${LINUX_defconfig}
+	make ${DTB_file}
+	if ! [[ $? -eq 0 ]]; then
+		echo_f build DTB fail.
+		exit 3
+	fi
+	popd
+	echo_s build DTB successful.
+else
+	echo_f  ${LINUXDIR} is not exist.
+	check_sdk
+	exit 12
+fi
+}
+
+# make modules
+function make_modules()
+{
+if [ -d ${LINUXDIR} ]; then
+	pushd ${LINUXDIR}
+	make ${LINUX_defconfig}
+	make modules
+	if ! [[ $? -eq 0 ]]; then
+		echo_f build DRIVER fail.
+		exit 4
+	fi
+	echo_s build DRIVER successful.
+	sudo rm -rf ${LEEZBOARD_MODULES_FOLDER}
+	sudo rm -rf ${LEEZBOARD_MODULES_TAR}
+	mkdir ${LEEZBOARD_MODULES_FOLDER}
+	if  ! [ -d ${LEEZBOARD_MODULES_FOLDER} ]; then
+		exit 4
+	fi
+	make INSTALL_MOD_PATH=${LEEZBOARD_MODULES_FOLDER} modules_install
+	popd
+	pushd ${LEEZBOARD_MODULES_FOLDER}
+	sudo tar -cvf ${LEEZBOARD_MODULES_TAR} *
+	echo_s build DRIVER.tar successful.
+	popd
+else
+	echo_f  ${LINUXDIR} is not exist.
+	check_sdk
+	exit 12
+fi
+}
+
+
+# robe
+
+# sudo make ARCH=arm INSTALL_MOD_PATH=/media/rootfs modules_install
+
+# passwd -l robe
+# passwd -u robe
+# passwd -d robe
+# tar tvf ti-sdk.tar
+
+# make_uboot
+# make_linux
+# make_dtb
+# make_modules
+# ls -al ${MLOfile} ${UBOOTfile} ${KERNELfile} ${DTBfile}
+
+
+# =================================================build bootable SD card
+# select sdcard
+function select_sdcard()
+{
+	read -p "please input the sdcard device [like:/dev/sdb] ${sdcard} >>> " sdcard
+	while [ ! -b ${sdcard} ]
+	do
+		read -p "try again. please input the sdcard device [/dev/sdb]:" sdcard
+	done
+	echo "#!/bin/bash" > ${sdk_sdcard_file}
+	echo "sdcard=${sdcard}" >> ${sdk_sdcard_file}
+}
+
+# make SD card for booting...
+function make_bootable_sdcard()
+{
+	sudo umount ${sdcard}*
+	sleep 1
+	sudo dd if=/dev/zero of=${sdcard} bs=1024 count=1024
+	sudo parted -s ${sdcard} mklabel msdos
+	sudo parted -s ${sdcard} unit cyl mkpart primary fat32 -- 0 10
+	sudo parted -s ${sdcard} set 1 boot on
+	sudo parted -s ${sdcard} unit cyl mkpart primary ext4 -- 10 -2
+	sudo mkfs.vfat -F 32 -n boot ${sdcard}1
+	sudo mkfs.ext4 -L rootfs ${sdcard}2
+	echo_s make bootable SD card sucessfully.
+	echo_s please unplug SD card and then plug, you will find 2 partitions on SD card.  
+}
+
+# make SD.CARD with LenovoPi_programming_4.3
+function make_sdcard_ti_prebuild_image()
+{
+	pushd ${imagepath}
+	sudo ./mkmmc-am57xx.sh ${sdcard}  MLO u-boot.img zImage LenovoPi.dtb tisdk-rootfs-image-am57xx-evm.tar.xz
+	popd
+}
+
+# NOTE that installing ROOTFS successful
+function echo_s_rm_sdcard_allfile()
+{
+	echo_s remove SD card boot partition file ok.
+	echo_s remove SD card rootfs partition file ok.
+}
+function echo_s_install_MLO_uboot()
+{
+	echo_s install MLO ok.
+	echo_s install u-boot.img ok.
+}
+function echo_s_install_ROOTFS()
+{
+	echo_s install ROOTFS ok.
+}
+function echo_s_install_DRIVERS()
+{
+	echo_s install drivers ok.
+}
+function echo_s_install_zImage_DTB()
+{
+	echo_s install zImage ok.
+	echo_s install LenovoPi.dtb ok.
+}
+
+# mount boot and rootfs partition
+function mount_sdcard()
+{
+	sudo mkdir -p ${sdcard_boot}
+	sudo mkdir -p ${sdcard_root}
+	
+	sudo mount ${sdcard}1 ${sdcard_boot}
+	sudo mount ${sdcard}2 ${sdcard_root}
+	
+	df
+}
+
+function umount_sdcard()
+{
+	sudo umount ${sdcard}*
+	df
+}
+
+# make_sdcard with DEBIAN_9 TAR
+function make_sdcard_debian_tar()
+{	
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+	
+	sudo tar -xvf ${debian9_tar} -C ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi 
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# make_sdcard with ubuntu_18.04_lts TAR
+function make_sdcard_ubuntu18_tar()
+{
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+
+	sudo tar -xvf ${ubuntu18_tar} -C ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# make_sdcard with ubuntu_16.04_lts TAR
+function make_sdcard_ubuntu16_tar()
+{
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+
+	sudo tar -xvf ${ubuntu16_tar} -C ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# rootfs.TAR will be done something 
+# apt install qemu-user-static
+function not_use()
+{
+	sudo cp -rf /usr/bin/qemu-arm-static ${ubuntu18_folder}/usr/bin/
+	sudo chroot ${ubuntu18_folder} /usr/bin/qemu-arm-static /bin/sh -i
+	passwd -d root
+	echo leezboard > /etc/hostname
+#	sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${ubuntu18_folder}
+		
+	sudo rm -rf ${ubuntu18_folder}/usr/bin/qemu-arm-static
+}
+
+# make_sdcard with DEBIAN_9 folder
+function make_sdcard_debian_folder()
+{	
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+
+	sudo cp -rf ${debian9_folder}/* ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# make_sdcard with ubuntu_18.04_lts folder
+function make_sdcard_ubuntu18_folder()
+{
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+
+	sudo cp -rf ${ubuntu18_folder}/* ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# make_sdcard with ubuntu_16.04_lts folder
+function make_sdcard_ubuntu16_folder()
+{
+	sudo rm -rf ${sdcard_boot}/*
+	sudo rm -rf ${sdcard_root}/*
+	echo_s_rm_sdcard_allfile
+	
+	sudo cp ${MLOfile} ${sdcard_boot}/
+	sudo cp ${UBOOTfile} ${sdcard_boot}/
+	echo_s_install_MLO_uboot
+
+	sudo cp -rf ${ubuntu16_folder}/* ${sdcard_root}/
+	echo_s_install_ROOTFS
+	
+	if [[ ${build_rootfs_with_MODULES} -eq yes ]]; then
+		sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C ${sdcard_root}
+		echo_s_install_DRIVERS
+	fi
+	sync
+	
+	sudo cp ${KERNELfile} ${sdcard_root_boot}/
+	sudo cp ${DTBfile} ${sdcard_root_boot}/
+	echo_s_install_zImage_DTB
+	
+	sync
+}
+
+# ==================================================build Image
+# build rootfs folder for Image file
+function build_rootfs_file()
+{
+	sudo rm -rf $1
+	sudo mkdir $1
+	sudo tar -xvf $2 -C $1
+	sudo mkdir -p $1/boot/
+	sudo cp ${KERNELfile} $1/boot/
+	sudo cp ${DTBfile} $1/boot/
+	sudo tar -xvf ${LEEZBOARD_MODULES_TAR} -C $1
+	echo_s build ROOTFS ok
+}
+
+function build_deian9_rootfs_file()
+{
+	build_rootfs_file ${image_debian9_folder} ${debian9_tar}
+}
+function build_ubuntu18_rootfs_file()
+{
+	build_rootfs_file ${image_ubuntu18_folder} ${ubuntu18_tar}
+}
+function build_ubuntu16_rootfs_file()
+{
+	build_rootfs_file ${image_ubuntu16_folder} ${ubuntu16_tar}
+}
+
+# make image file with nothing
+function make_image_file()
+{
+	sudo rm ${image_file} -rf
+	sudo dd if=/dev/zero of=${image_file} bs=1M count=1500
+	sudo parted -s ${image_file} mklabel msdos
+	echo_s make IMAGE file ok
+}
+
+# build image file with rootfs
+function build_image_file_with_folder()
+{	
+	make_image_file
+	sudo parted -s ${image_file} unit MB mkpart primary fat32 -- 1 50
+	sudo parted -s ${image_file} set 1 boot on
+	sudo parted -s ${image_file} unit MB mkpart primary ext4 -- 50 -1
+	echo_s make partition ok
+	sudo losetup -fP --show ${image_file}
+	sudo mkfs.vfat -F 32 -n boot ${loop}p1
+	sudo mkfs.ext4 -L rootfs ${loop}p2
+	echo_s make FileSystem ok
+	sudo rm ${loop_mmount}p{1,2} -rf
+	sudo mkdir -p ${loop_mmount}p{1,2}
+	sudo mount -o loop ${loop}p1 ${loop_mmount}p1
+	sudo mount -o loop ${loop}p2 ${loop_mmount}p2
+	echo_s mount FileSystem ok
+	sudo cp ${MLOfile} ${loop_mmount}p1
+	sudo cp ${UBOOTfile} ${loop_mmount}p1
+	sudo cp -rf $1/* ${loop_mmount}p2
+	
+	
+	echo_s copy FileSystem ok
+	sudo umount ${loop_mmount}p{1,2}
+	sudo e2fsck -f ${loop}p2
+	sudo losetup -d ${loop}
+	echo_s ALL is ok
+}
+function list_file_in_image()
+{
+	echo_s list bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+	sudo losetup -fP --show ${image_file}
+	sudo mount -o loop ${loop}p1 ${loop_mmount}p1
+	sudo mount -o loop ${loop}p2 ${loop_mmount}p2
+	echo_s partiton1
+	ls ${loop_mmount}p1
+	echo_s partiton2
+	ls ${loop_mmount}p2
+	echo_s partiton2 boot
+	ls ${loop_mmount}p2/boot
+	sudo umount ${loop_mmount}p{1,2}
+	sudo losetup -d ${loop}
+	echo_s list eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+}
+	
+# build debian image file with rootfs folder
+function build_debian9_image_file()
+{
+	build_image_file_with_folder ${image_debian9_folder}
+	list_file_in_image
+	sudo rm -rf ${image_debian9}
+	sudo mv ${image_file} ${image_debian9}
+}
+function build_ubuntu18_image_file()
+{
+	build_image_file_with_folder ${image_ubuntu18_folder}
+	list_file_in_image
+	sudo rm -rf ${image_ubuntu18}
+	sudo mv ${image_file} ${image_ubuntu18}
+}
+function build_ubuntu16_image_file()
+{
+	build_image_file_with_folder ${image_ubuntu16_folder}
+	list_file_in_image
+	sudo rm -rf ${image_ubuntu16}
+	sudo mv ${image_file} ${image_ubuntu16}
+}
+
+# =================================================build debian desktop IMAGE
+function build_image_file_with_tar()
+{	
+	make_image_file
+	sudo parted -s ${image_file} unit MB mkpart primary fat32 -- 1 50
+	sudo parted -s ${image_file} set 1 boot on
+	sudo parted -s ${image_file} unit MB mkpart primary ext4 -- 50 -1
+	echo_s make partition ok
+	sudo losetup -fP --show ${image_file}
+	sudo mkfs.vfat -F 32 -n boot ${loop}p1
+	sudo mkfs.ext4 -L rootfs ${loop}p2
+	echo_s make FileSystem ok
+	sudo rm ${loop_mmount}p{1,2} -rf
+	sudo mkdir -p ${loop_mmount}p{1,2}
+	sudo mount -o loop ${loop}p1 ${loop_mmount}p1
+	sudo mount -o loop ${loop}p2 ${loop_mmount}p2
+	echo_s mount FileSystem ok
+	sudo cp ${MLOfile} ${loop_mmount}p1
+	sudo cp ${UBOOTfile} ${loop_mmount}p1
+	sudo tar xvf $1 -C ${loop_mmount}p2
+	sudo cp -rf ${image_debian9_desktop_patch}/* ${loop_mmount}p2
+	echo_s copy FileSystem ok
+	sudo umount ${loop_mmount}p{1,2}
+	sudo e2fsck -f ${loop}p2
+	sudo losetup -d ${loop}
+	echo_s ALL is ok
+}
+
+function build_debian9_desktop_image_file()
+{
+	build_image_file_with_tar ${image_debian9_desktop_tar}
+	list_file_in_image
+	sudo rm -rf ${image_debian9_desktop}
+	sudo mv ${image_file} ${image_debian9_desktop}
+}
+
+# =================================================build debian linux 
+function contrib_debian()
+{
+	sudo mkdir mkdir -pv ${image_debian9_folder}/{dev,proc,sys,run}
+	sudo mknod -m 600 ${image_debian9_folder}/dev/console c 5 1
+	sudo mknod -m 666 ${image_debian9_folder}/dev/null c 1 3
+	sudo mount -v --bind /dev/ ${image_debian9_folder}/dev
+	sudo mount -vt devpts devpts ${image_debian9_folder}/dev/pts -o gid=5,mode=620
+	sudo mount -vt proc proc ${image_debian9_folder}/proc
+	sudo mount -vt sysfs sysfs ${image_debian9_folder}/sys
+	sudo mount -vt tmpfs tmpfs ${image_debian9_folder}/run
+	sudo chroot ${image_debian9_folder} /usr/bin/qemu-arm-static /bin/sh -i
+	vi /etc/resolv.conf
+	nameserver 127.0.1.1
+	apt update
+	apt install xfce4
+	# 报错===============
+	# /usr/bin/locale: Cannot set LC_CTYPE to default locale: No such file or directory
+	# /usr/bin/locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+	# /usr/bin/locale: Cannot set LC_ALL to default locale: No such file or directory
+	# ===================
+	exit
+	sudo umount ${image_debian9_folder}/{dev/pts,dev,proc,sys,run}
+}
+
+# =================================================mod function list
+# make_uboot
+# make_linux_menuconfig
+# make_linux
+# make_dtb
+# make_modules
+# select_sdcard
+# make_bootable_sdcard
+# make_sdcard_ti_prebuild_image
+# mount_sdcard
+# umount_sdcard
+# make_sdcard_debian_tar
+# make_sdcard_ubuntu18_tar
+# make_sdcard_ubuntu16_tar
+# make_sdcard_debian_folder
+# make_sdcard_ubuntu18_folder
+# make_sdcard_ubuntu16_folder
+# build_deian9_rootfs_file
+# build_ubuntu18_rootfs_file
+# build_ubuntu16_rootfs_file
+# build_debian9_image_file
+# build_ubuntu18_image_file
+# build_ubuntu16_image_file
+#
+# 
+# build_debian9_desktop_image_file
+
+# =================================================USER INTERFACES
+# onekey build menu. CLI UI
+function menu()
+{
+	echo_i [1] make uboot
+	echo_i [2] make linux menuconfig
+	echo_i [3] make linux
+	echo_i [4] make DTB
+	echo_i [5] make modules
+	echo_i [6] select SD card device
+	echo_i [7] make bootable SD card without anything/rootfs
+	echo_i [8] install TI_ROOTFS to SD card
+	echo_i [9] mount SD card
+	echo_i [0] umount SD card
+	echo_i [a] install debian 9 to SD card \(tar\)
+	echo_i [b] install ubuntu 18.04 to SD card \(tar\)
+	echo_i [c] install ubuntu 16.04 to SD card \(tar\)	
+	echo_i [d] install debian 9 to SD card \(folder\)
+	echo_i [e] install ubuntu 18.04 to SD card \(folder\)
+	echo_i [f] install ubuntu 16.04 to SD card \(folder\)
+	echo_i [g] build deian9 rootfs for Image file
+	echo_i [h] build ubuntu18 rootfs for Image file
+	echo_i [i] build ubuntu16 rootfs for Image file
+	echo_i [j] build deian9 Image file
+	echo_i [k] build ubuntu18 Image file
+	echo_i [l] build ubuntu16 Image file
+	echo_i =======
+	echo_i [y] build debian9 desktop Image file
+	echo_i [z] contrib debian linux
+}
+
+function do_something()
+{
+	menu
+	read -p "please select: " ANSWER
+	if [[ $ANSWER == "1" ]]; then make_uboot;fi
+	if [[ $ANSWER == "2" ]]; then make_linux_menuconfig;fi
+	if [[ $ANSWER == "3" ]]; then make_linux;fi
+	if [[ $ANSWER == "4" ]]; then make_dtb;fi
+	if [[ $ANSWER == "5" ]]; then make_modules;fi
+	if [[ $ANSWER == "6" ]]; then select_sdcard ;fi
+	if [[ $ANSWER == "7" ]]; then make_bootable_sdcard;fi
+	if [[ $ANSWER == "8" ]]; then make_sdcard_ti_prebuild_image;fi
+	if [[ $ANSWER == "9" ]]; then mount_sdcard;fi
+	if [[ $ANSWER == "0" ]]; then umount_sdcard;fi
+	if [[ $ANSWER == "a" ]]; then make_sdcard_debian_tar;fi
+	if [[ $ANSWER == "b" ]]; then make_sdcard_ubuntu18_tar;fi
+	if [[ $ANSWER == "c" ]]; then make_sdcard_ubuntu16_tar;fi
+	if [[ $ANSWER == "d" ]]; then make_sdcard_debian_folder;fi
+	if [[ $ANSWER == "e" ]]; then make_sdcard_ubuntu18_folder;fi
+	if [[ $ANSWER == "f" ]]; then make_sdcard_ubuntu16_folder;fi
+	if [[ $ANSWER == "g" ]]; then build_deian9_rootfs_file;fi
+	if [[ $ANSWER == "h" ]]; then build_ubuntu18_rootfs_file;fi
+	if [[ $ANSWER == "i" ]]; then build_ubuntu16_rootfs_file;fi
+	if [[ $ANSWER == "j" ]]; then build_debian9_image_file;fi
+	if [[ $ANSWER == "k" ]]; then build_ubuntu18_image_file;fi
+	if [[ $ANSWER == "l" ]]; then build_ubuntu16_image_file;fi
+	
+	if [[ $ANSWER == "y" ]]; then build_debian9_desktop_image_file;fi 
+	if [[ $ANSWER == "z" ]]; then contrib_debian;fi
+}

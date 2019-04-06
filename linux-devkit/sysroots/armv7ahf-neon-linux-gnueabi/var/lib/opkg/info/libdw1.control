@@ -1,0 +1,14 @@
+Package: libdw1
+Version: 0.148-r11.0
+Description: Utilities and libraries for handling compiled object files
+ Utilities and libraries for handling compiled object files.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: (GPL-2+ & Elfutils-Exception)
+Architecture: armv7ahf-neon
+OE: elfutils
+Homepage: https://fedorahosted.org/elfutils
+Depends: libbz2-1 (>= 1.0.6), libc6 (>= 2.23), libelf1 (>= 0.148), libz1 (>= 1.2.8)
+Provides: libdw
+Source: elfutils_0.148.bb

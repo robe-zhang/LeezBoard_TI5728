@@ -1,0 +1,14 @@
+Package: nativesdk-libelf1
+Version: 0.166-r0.0
+Description: Utilities and libraries for handling compiled object files
+ Utilities and libraries for handling compiled object files.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: (GPLv3 & Elfutils-Exception)
+Architecture: x86_64-nativesdk
+OE: nativesdk-elfutils
+Homepage: https://sourceware.org/elfutils
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libz1 (>= 1.2.8)
+Provides: nativesdk-libelf
+Source: elfutils_0.166.bb

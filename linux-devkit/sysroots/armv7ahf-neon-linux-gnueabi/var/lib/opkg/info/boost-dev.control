@@ -1,0 +1,16 @@
+Package: boost-dev
+Version: 1.61.0-r0.0
+Description: Free peer-reviewed portable C++ source libraries - Development files
+ Free peer-reviewed portable C++ source libraries.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSL-1.0 & MIT & Python-2.0
+Architecture: armv7ahf-neon
+OE: boost
+Homepage: http://www.boost.org/
+Depends: boost (= 1.61.0-r0.0), boost-log, boost-math, boost-serialization, boost-test, libboost-atomic1.61.0, libboost-chrono1.61.0, libboost-container1.61.0, libboost-date-time1.61.0, libboost-filesystem1.61.0, libboost-graph1.61.0, libboost-iostreams1.61.0, libboost-locale1.61.0, libboost-program-options1.61.0, libboost-python1.61.0, libboost-python3-1.61.0, libboost-random1.61.0, libboost-regex1.61.0, libboost-signals1.61.0, libboost-system1.61.0, libboost-thread1.61.0, libboost-timer1.61.0, libboost-wave1.61.0
+Recommends: boost-atomic-dev, boost-chrono-dev, boost-container-dev, boost-date-time-dev, boost-filesystem-dev, boost-graph-dev, boost-iostreams-dev, boost-locale-dev, boost-log-dev, boost-math-dev, boost-program-options-dev, boost-python-dev, boost-python3-dev, boost-random-dev, boost-regex-dev, boost-serialization-dev, boost-signals-dev, boost-system-dev, boost-test-dev, boost-thread-dev, boost-timer-dev, boost-wave-dev, bzip2-dev, icu-dev, libbz2-dev, libc6-dev, libgcc-s-dev, libicudata-dev, libicui18n-dev, libicuuc-dev, libstdc++-dev, libz-dev, python-dev, python3-dev
+Source: boost_1.61.0.bb

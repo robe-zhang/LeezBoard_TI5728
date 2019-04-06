@@ -1,0 +1,16 @@
+Package: libarchive-dev
+Version: 3.2.2-r0.0
+Description: Support for reading various archive formats - Development files
+ C library and command-line tools for reading and writing tar, cpio, zip,
+ ISO, and other archive formats  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7ahf-neon
+OE: libarchive
+Homepage: http://www.libarchive.org/
+Depends: libarchive (= 3.2.2-r0.0)
+Recommends: attr-dev, bzip2-dev, libbz2-dev, libc6-dev, libxml2-dev, libz-dev, update-alternatives-opkg-dev
+Source: libarchive_3.2.2.bb

@@ -1,0 +1,14 @@
+Package: pciutils
+Version: 3.5.1-r0.0
+Description: PCI utilities
+ The PCI Utilities package contains a library for portable access to PCI
+ bus configuration space and several utilities based on this library.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: pciutils
+Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+Depends: libc6 (>= 2.23), libkmod2 (>= 23+git0+65a885df5f), libpci3 (>= 3.5.1), libudev1 (>= 230+git0+3a74d4fc90), libz1 (>= 1.2.8), pciutils-ids
+Source: pciutils_3.5.1.bb

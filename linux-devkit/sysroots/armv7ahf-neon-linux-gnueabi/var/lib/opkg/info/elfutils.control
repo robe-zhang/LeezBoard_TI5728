@@ -1,0 +1,13 @@
+Package: elfutils
+Version: 0.148-r11.0
+Description: Utilities and libraries for handling compiled object files
+ Utilities and libraries for handling compiled object files.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: (GPL-2+ & Elfutils-Exception)
+Architecture: armv7ahf-neon
+OE: elfutils
+Homepage: https://fedorahosted.org/elfutils
+Depends: libasm1 (>= 0.148), libbz2-1 (>= 1.0.6), libc6 (>= 2.23), libdw1 (>= 0.148), libelf1 (>= 0.148), libz1 (>= 1.2.8)
+Source: elfutils_0.148.bb

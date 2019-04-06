@@ -1,0 +1,10 @@
+/usr/lib/libvx_framework.a
+/usr/lib/libvx_tiovx_tests.a
+/usr/lib/libvx_kernels_openvx_core.a
+/usr/lib/libvx_conformance_tests.a
+/usr/lib/libvx_vxu.a
+/usr/lib/libvx_sample_usecases.a
+/usr/lib/libvx_tutorial.a
+/usr/lib/libvx_conformance_engine.a
+/usr/lib/libvx_platform_vision_sdk_linux.a
+/usr/lib/libvx_conformance_tests_testmodule.a

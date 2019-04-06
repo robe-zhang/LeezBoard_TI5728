@@ -1,0 +1,19 @@
+#!/bin/sh
+# Begin section update-rc.d
+if [ -z "$D" -a -x "/etc/init.d/run-postinsts" ]; then
+	/etc/init.d/run-postinsts stop || :
+fi
+# End section update-rc.d
+OPTS=""
+
+if [ -n "$D" ]; then
+    OPTS="--root=$D"
+fi
+
+if type systemctl >/dev/null 2>/dev/null; then
+	if [ -z "$D" ]; then
+		systemctl stop run-postinsts.service
+	fi
+
+	systemctl $OPTS disable run-postinsts.service
+fi

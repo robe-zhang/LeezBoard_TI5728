@@ -1,0 +1,13 @@
+Package: gstreamer1.0-libav
+Version: 1.8.3-r0.0
+Description: Libav-based GStreamer 1.x plugin
+ Libav-based GStreamer 1.x plugin.
+Section: multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2+ & ( (GPLv2+ & LGPLv2.1+) | (GPLv3+ & LGPLv3+) )
+Architecture: armv7ahf-neon
+OE: gstreamer1.0-libav
+Homepage: http://gstreamer.freedesktop.org/
+Depends: gstreamer1.0 (>= 1.8.3), libbz2-1 (>= 1.0.6), libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libgstaudio-1.0-0 (>= 1.8.3), libgstpbutils-1.0-0 (>= 1.8.3), libgsttag-1.0-0 (>= 1.8.3), libgstvideo-1.0-0 (>= 1.8.3), liblzma5 (>= 5.2.2), liborc-0.4-0 (>= 0.4.25), libpcre1 (>= 8.39), libz1 (>= 1.2.8)
+Source: gstreamer1.0-libav_1.8.3.bb

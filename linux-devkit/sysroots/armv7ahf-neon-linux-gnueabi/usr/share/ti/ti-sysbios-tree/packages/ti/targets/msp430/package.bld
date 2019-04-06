@@ -1,0 +1,12 @@
+/*
+ *  Copyright 2017 by Texas Instruments Incorporated.
+ *
+ */
+
+Pkg.otherFiles = ["std.h"];
+Pkg.otherSrcs = Pkg.otherFiles;
+/*
+ *  @(#) ti.targets.msp430; 1, 0, 0,1; 7-27-2017 11:47:59; /db/ztree/library/trees/xdctargets/xdctargets-o04/src/ xlibrary
+
+ */
+

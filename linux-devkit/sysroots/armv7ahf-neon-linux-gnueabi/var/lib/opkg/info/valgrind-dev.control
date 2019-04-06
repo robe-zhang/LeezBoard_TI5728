@@ -1,0 +1,16 @@
+Package: valgrind-dev
+Version: 3.12.0-r0.0
+Description: Valgrind memory debugger and instrumentation framework - Development files
+ Valgrind memory debugger and instrumentation framework.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & GPLv2+ & BSD
+Architecture: armv7ahf-neon
+OE: valgrind
+Homepage: http://valgrind.org/
+Depends: valgrind (= 3.12.0-r0.0)
+Recommends: libc6-dev, perl-dev
+Source: valgrind_3.12.0.bb

@@ -1,0 +1,16 @@
+Package: elfutils-dev
+Version: 0.148-r11.0
+Description: Utilities and libraries for handling compiled object files - Development files
+ Utilities and libraries for handling compiled object files.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: (GPL-2+ & Elfutils-Exception)
+Architecture: armv7ahf-neon
+OE: elfutils
+Homepage: https://fedorahosted.org/elfutils
+Depends: elfutils (= 0.148-r11.0), libasm1, libdw1, libelf1
+Recommends: bzip2-dev, libasm-dev, libbz2-dev, libc6-dev, libdw-dev, libelf-dev, libtool-dev, libz-dev
+Source: elfutils_0.148.bb

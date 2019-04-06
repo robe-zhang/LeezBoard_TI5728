@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -f "/root/.boot" ] ;  then
+# /root/.boot &
+fi
+

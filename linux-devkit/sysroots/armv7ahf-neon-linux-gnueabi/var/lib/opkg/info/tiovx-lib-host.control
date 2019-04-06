@@ -1,0 +1,15 @@
+Package: tiovx-lib-host
+Version: 01.00.00.00-r1.0
+Description: TI OpenVX HOST (Linux A15) side library
+ TI OpenVX implementation, TIOVX, based on Khronos OpenVX framework
+ implementation including multiple C66 optimized kernels. Khronos defined
+ conformance test is part of this package as well as additional TI
+ specific tests. Few tutorial examples are also included. This package
+ creates necessary libraries and header files for Linux Host side only.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TSPA
+Architecture: am57xx_evm
+OE: tiovx-lib-host
+Source: tiovx-lib-host.bb

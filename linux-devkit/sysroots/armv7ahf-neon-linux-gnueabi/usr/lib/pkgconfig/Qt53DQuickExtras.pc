@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 3DQuickExtras
+Description: Qt 3DQuickExtras module
+Version: 5.7.1
+Libs: -lQt53DQuickExtras 
+Libs.private: -L/usr/lib -lQt53DInput -L/usr/lib -lQt53DQuick -lQt53DRender -lQt53DLogic -lQt53DCore -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Concurrent -lQt5Core -lpthread -lGLESv2 -lsrv_um  
+Cflags: -I${includedir}/Qt3DQuickExtras -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Qml Qt53DCore Qt53DInput Qt53DQuick Qt53DRender Qt53DLogic
+

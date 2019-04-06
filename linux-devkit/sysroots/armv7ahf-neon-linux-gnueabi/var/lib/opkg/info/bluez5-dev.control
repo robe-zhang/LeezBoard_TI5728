@@ -1,0 +1,17 @@
+Package: bluez5-dev
+Version: 5.41-r0.0
+Description: Linux Bluetooth Stack Userland V5 - Development files
+ Linux Bluetooth stack V5 userland components.  These include a system
+ configurations, daemons, tools and system libraries.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+
+Architecture: armv7ahf-neon
+OE: bluez5
+Homepage: http://www.bluez.org
+Depends: bluez5 (= 5.41-r0.0)
+Recommends: dbus-lib-dev, initscripts-dev, libc6-dev, libcap-dev, libcheck-dev, libdbus-glib-1-dev, libglib-2.0-dev, libical-dev, libicui18n-dev, libicuuc-dev, liblzma-dev, libpcre-dev, libreadline-dev, libsystemd-dev, libudev-dev, libusb-dev, python3-dbus-dev, python3-dev, python3-pygobject-dev, udev-dev, update-rc.d-dev
+Source: bluez5_5.41.bb

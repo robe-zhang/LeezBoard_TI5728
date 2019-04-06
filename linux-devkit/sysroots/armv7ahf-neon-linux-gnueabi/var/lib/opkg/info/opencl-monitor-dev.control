@@ -1,0 +1,15 @@
+Package: opencl-monitor-dev
+Version: 1.1.14.10-r0.0.0
+Description: opencl-monitor version 1.1.14.10-r0.0 - Development files
+ TI OpenCL compute device firmware  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: opencl-monitor
+Homepage: http://software-dl.ti.com/mctools/docs/opencl/intro.html
+Depends: opencl-monitor (= 1.1.14.10-r0.0.0)
+Recommends: common-csl-ip-rtos-dev, edma3-lld-rtos-dev, gdbserver-c6x-dev, libaet-dev, libulm-dev, openmp-rtos-dev, ti-framework-components-dev, ti-ipc-rtos-dev, ti-sysbios-dev, ti-xdais-dev, update-alternatives-opkg-dev
+Source: opencl-monitor_git.bb

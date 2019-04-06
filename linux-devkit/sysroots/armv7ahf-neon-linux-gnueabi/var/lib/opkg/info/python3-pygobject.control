@@ -1,0 +1,12 @@
+Package: python3-pygobject
+Version: 3.20.1-r0.0
+Description: Python GObject bindings
+ Python GObject bindings.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7ahf-neon
+OE: python3-pygobject
+Depends: gobject-introspection (>= 1.48.0), libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libz1 (>= 1.2.8), python3-core, python3-importlib, python3-setuptools
+Source: python3-pygobject_3.20.1.bb

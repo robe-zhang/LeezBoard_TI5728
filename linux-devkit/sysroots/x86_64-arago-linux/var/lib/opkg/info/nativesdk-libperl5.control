@@ -1,0 +1,14 @@
+Package: nativesdk-libperl5
+Version: 5.22.1-r0.0
+Description: Perl scripting language
+ Perl scripting language.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Artistic-1.0 | GPL-1.0+
+Architecture: x86_64-nativesdk
+OE: nativesdk-perl
+Homepage: http://www.perl.org/
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libssp0 (>= linaro-6.2)
+Provides: nativesdk-perl-lib
+Source: perl_5.22.1.bb

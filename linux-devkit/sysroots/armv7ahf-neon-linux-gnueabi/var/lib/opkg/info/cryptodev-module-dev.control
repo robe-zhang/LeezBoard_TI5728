@@ -1,0 +1,16 @@
+Package: cryptodev-module-dev
+Version: 1.8-r0.arago1.0
+Description: A /dev/crypto device driver kernel module - Development files
+ A /dev/crypto device driver kernel module.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: am57xx_evm
+OE: cryptodev-module
+Homepage: http://cryptodev-linux.org/
+Depends: cryptodev-module (= 1.8-r0.arago1.0)
+Recommends: cryptodev-linux-dev, kernel-4.9.69-g9ce43c71ae-dev, kernel-module-cryptodev-dev
+Source: cryptodev-module_1.8.bb

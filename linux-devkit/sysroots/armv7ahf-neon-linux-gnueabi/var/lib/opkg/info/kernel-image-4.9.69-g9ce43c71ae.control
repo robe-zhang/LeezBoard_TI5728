@@ -1,0 +1,13 @@
+Package: kernel-image-4.9.69-g9ce43c71ae
+Version: 4.9.69+git0+9ce43c71ae-r7a.arago5.tisdk22.1
+Description: linux-ti-staging version 4.9.69+gitAUTOINC+9ce43c71ae-r7a.arago5.tisdk22
+ Linux kernel for TI devices
+Section: kernel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: am57xx_evm
+OE: linux-ti-staging
+Depends: kernel-image-uimage-4.9.69-g9ce43c71ae, kernel-image-zimage-4.9.69-g9ce43c71ae
+Provides: kernel-image
+Source: linux-ti-staging_4.9.bb

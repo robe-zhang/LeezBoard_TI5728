@@ -1,0 +1,15 @@
+Package: opkg-dev
+Version: 1:0.3.3-r0.0
+Description: Open Package Manager - Development files
+ Open Package Manager.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: opkg
+Homepage: http://code.google.com/p/opkg/
+Depends: libopkg1, opkg (= 1:0.3.3-r0.0)
+Recommends: libarchive-dev, libbz2-dev, libc6-dev, libopkg-dev, libxml2-dev, libz-dev, opkg-arch-config-dev, run-postinsts-dev, update-alternatives-opkg-dev
+Source: opkg_0.3.3.bb

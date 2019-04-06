@@ -1,0 +1,15 @@
+Package: python-pytest-dev
+Version: 3.0.1-r0.0
+Description: Simple powerful teting with python - Development files
+ Simple powerful teting with python.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-pytest
+Depends: python-pytest (= 3.0.1-r0.0)
+Recommends: python-argparse-dev, python-debugger-dev, python-dev, python-json-dev, python-py-dev, python-setuptools-dev
+Source: python-pytest_3.0.1.bb

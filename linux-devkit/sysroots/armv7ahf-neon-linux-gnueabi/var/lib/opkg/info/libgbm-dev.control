@@ -1,0 +1,16 @@
+Package: libgbm-dev
+Version: 10.0.0-r0.tisdk0.0
+Description: Userspace interface for the kernel GBM services - Development files
+ Userspace interface for the kernel GBM services.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: libgbm
+Homepage: http://git.ti.com/glsdk/libgbm.git
+Depends: libgbm2 (= 10.0.0-r0.tisdk0.0)
+Recommends: libc6-dev, libcap-dev, libdrm-dev, libudev-dev, udev-dev
+Source: libgbm_10.0.0.bb

@@ -1,0 +1,17 @@
+Package: libdrm-omap1
+Version: 2.4.70-r0.arago2.0
+Description: Userspace interface to the kernel DRM services
+ The runtime library for accessing the kernel DRM services.  DRM stands
+ for \"Direct Rendering Manager\", which is the kernel portion of the
+ \"Direct Rendering Infrastructure\" (DRI).  DRI is required for many
+ hardware accelerated OpenGL drivers.
+Section: x11/base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: libdrm
+Homepage: http://dri.freedesktop.org
+Depends: libc6 (>= 2.23), libdrm2 (>= 2.4.70)
+Provides: libdrm-omap
+Source: libdrm_2.4.70.bb

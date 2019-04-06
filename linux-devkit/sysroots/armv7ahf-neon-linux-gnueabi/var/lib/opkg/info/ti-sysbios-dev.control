@@ -1,0 +1,14 @@
+Package: ti-sysbios-dev
+Version: 6_52_00_12-r0.0
+Description: ti-sysbios version 6_52_00_12-r0 - Development files
+ TI SYS/BIOS v6 Kernel  This package contains symbolic links, header
+ files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7ahf-neon
+OE: ti-sysbios
+Homepage: http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/bios/sysbios
+Depends: ti-sysbios (= 6_52_00_12-r0.0)
+Source: ti-sysbios_6.52.00.12.bb

@@ -1,0 +1,15 @@
+Package: openmp-rtos-dev
+Version: 2_06_02_01-r0.0
+Description: openmp-rtos version 2_06_02_01-r0 - Development files
+ TI OpenMP RTOS  This package contains symbolic links, header files, and
+ related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: openmp-rtos
+Homepage: git://git.ti.com/openmp/ti-openmp-dsp-runtime.git
+Depends: openmp-rtos (= 2_06_02_01-r0.0)
+Recommends: common-csl-ip-rtos-dev, libulm-dev, ti-ipc-rtos-dev, ti-sysbios-dev
+Source: openmp-rtos_git.bb

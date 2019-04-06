@@ -1,0 +1,13 @@
+Package: libfaad-dev
+Version: 2.7-r1.0
+Description: Library for reading some sort of media format
+ Library for reading some sort of media format.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7ahf-neon
+OE: faad2
+Depends: libfaad2
+Recommends: libc6-dev
+Source: faad2_2.7.bb

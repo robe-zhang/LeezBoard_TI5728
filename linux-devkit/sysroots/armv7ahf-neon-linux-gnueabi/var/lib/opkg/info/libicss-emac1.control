@@ -1,0 +1,13 @@
+Package: libicss-emac1
+Version: 01.00.00.11B-r0.0.0
+Description: icss-emac-lld version 01.00.00.11B-r0.0
+ TI ICSS-EMAC low level driver library
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: icss-emac-lld
+Depends: libc6 (>= 2.23)
+Provides: icss-emac-lld
+Source: icss-emac-lld_git.bb

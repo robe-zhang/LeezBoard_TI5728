@@ -1,0 +1,340 @@
+TMS320C6x C/C++ Optimizer               v8.2.2
+Build Number 1RK5R-2LI-VATAQ-TAR-C08D
+Making tomp_invalidatePrefetchBuffer a function synonym of CSL_XMC_invalidatePrefetchBuffer
+Making tomp_semAcquire a function synonym of AcquireSpinLock
+Making tomp_semRelease a function synonym of ReleaseSpinLock
+
+static unsigned char AcquireSpinLock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void CACHE_AsmNop() is called from 2 sites in this file.
+    It appears to be inlineable (size = 5 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void CACHE_invL1d() is called from 1 sites in this file.
+    It appears to be inlineable (size = 61 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	_restore_interrupts() (1 times)
+	CACHE_AsmNop() (1 times)
+	CACHE_invL1dWait() (1 times)
+	_mfence() (2 times)
+	CSL_XMC_invalidatePrefetchBuffer() (1 times)
+	_disable_interrupts() (1 times)
+
+static void CACHE_invL1dWait() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void CACHE_invL2() is called from 1 sites in this file.
+    It appears to be inlineable (size = 61 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	_restore_interrupts() (1 times)
+	CACHE_AsmNop() (1 times)
+	CACHE_invL2Wait() (1 times)
+	_mfence() (2 times)
+	CSL_XMC_invalidatePrefetchBuffer() (1 times)
+	_disable_interrupts() (1 times)
+
+static void CACHE_invL2Wait() is called from 1 sites in this file.
+    It appears to be inlineable (size = 13 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void CSL_XMC_invalidatePrefetchBuffer() is called from 3 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void ReleaseSpinLock() is called from 1 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void __heap_init_l2() is called from 0 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void *__malloc_l2() is called from 0 sites in this file.
+    It appears to be inlineable (size = 39 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void *__ti_dsp_calloc() is called from 0 sites in this file.
+    It appears to be inlineable (size = 35 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	__ti_dsp_malloc() (1 times)
+
+extern void __ti_dsp_free() is called from 3 sites in this file.
+    It appears to be inlineable (size = 142 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	mremove() (4 times)
+	inv_and_release_lock() (5 times)
+	minsert() (4 times)
+	acquire_lock_and_inv() (1 times)
+
+extern void __ti_dsp_heap_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 10 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	release_dsp_heap_lock() (1 times)
+	tomp_dsp_heap_init() (1 times)
+	acquire_dsp_heap_lock() (1 times)
+
+extern void *__ti_dsp_malloc() is called from 4 sites in this file.
+    It appears to be inlineable (size = 87 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	minsert() (1 times)
+	mremove() (1 times)
+	inv_and_release_lock() (2 times)
+	acquire_lock_and_inv() (1 times)
+
+extern void *__ti_dsp_memalign() is called from 0 sites in this file.
+    It appears to be inlineable (size = 142 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	minsert() (2 times)
+	mremove() (1 times)
+	inv_and_release_lock() (2 times)
+	__ti_dsp_malloc() (1 times)
+	release_dsp_heap_lock() (1 times)
+	acquire_lock_and_inv() (1 times)
+
+extern void *__ti_dsp_realloc() is called from 0 sites in this file.
+    It appears to be inlineable (size = 160 units)
+    It has 5 non-trivial scope blocks nested 5 deep.
+    It calls these functions:
+	memcpy() (1 times)
+	minsert() (1 times)
+	mremove() (1 times)
+	inv_and_release_lock() (6 times)
+	acquire_lock_and_inv() (1 times)
+	__ti_dsp_free() (3 times)
+	__ti_dsp_malloc() (2 times)
+
+static void acquire_dsp_heap_lock() is called from 2 sites in this file.
+    It appears to be inlineable (size = 11 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_semAcquire() (1 times)
+
+static void acquire_lock_and_inv() is called from 4 sites in this file.
+    It appears to be inlineable (size = 7 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	inv_packet_list() (1 times)
+	acquire_dsp_heap_lock() (1 times)
+
+static void inv_and_release_lock() is called from 15 sites in this file.
+    It appears to be inlineable (size = 7 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	release_dsp_heap_lock() (1 times)
+	inv_packet_list() (1 times)
+
+static void inv_packet_list() is called from 2 sites in this file.
+    It appears to be inlineable (size = 30 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	tomp_cacheInv() (1 times)
+
+static void minsert() is called from 8 sites in this file.
+    It appears to be inlineable (size = 64 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void mremove() is called from 7 sites in this file.
+    It appears to be inlineable (size = 53 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void release_dsp_heap_lock() is called from 3 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tomp_semRelease() (1 times)
+	tomp_mfence() (1 times)
+
+static void tomp_cacheInv() is called from 1 sites in this file.
+    It appears to be inlineable (size = 21 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	_restore_interrupts() (1 times)
+	tomp_mfence() (1 times)
+	tomp_invalidatePrefetchBuffer() (1 times)
+	CACHE_invL2() (1 times)
+	CACHE_invL1d() (1 times)
+	_disable_interrupts() (1 times)
+
+extern void tomp_dsp_heap_init() is called from 1 sites in this file.
+    It appears to be inlineable (size = 39 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static void tomp_invalidatePrefetchBuffer() is called from 1 sites in this file.
+    It appears to be inlineable (size = 2 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	CSL_XMC_invalidatePrefetchBuffer() (1 times)
+
+static void tomp_mfence() is called from 2 sites in this file.
+    It appears to be inlineable (size = 9 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+static unsigned char tomp_semAcquire() is called from 1 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	AcquireSpinLock() (1 times)
+
+static void tomp_semRelease() is called from 1 sites in this file.
+    It appears to be inlineable (size = 4 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	ReleaseSpinLock() (1 times)
+
+
+These functions may be recursive:
+	__ti_dsp_calloc()
+	__ti_dsp_memalign()
+	__ti_dsp_realloc()
+	__ti_dsp_free()
+	__ti_dsp_malloc()
+	inv_and_release_lock()
+	acquire_lock_and_inv()
+	inv_packet_list()
+	tomp_cacheInv()
+	CACHE_invL2()
+	CACHE_invL1d()
+
+Function tomp_cacheInv() will be specialized on these parameters:
+	[2] byteCnt == 8u;
+
+Results of interprocedural value propagation:
+
+   static void tomp_cacheInv() has these parameter attributes:
+      unsigned byteCnt :  byteCnt == 8u;
+
+Function CACHE_invL2() will be specialized on these parameters:
+	[2] byteCnt == 8u;
+	[3] wait == 0u;
+
+Results of interprocedural value propagation:
+
+   static void CACHE_invL2() has these parameter attributes:
+      unsigned byteCnt :  byteCnt == 8u;
+      unsigned wait :     wait == 0u;
+
+Function CACHE_invL1d() will be specialized on these parameters:
+	[2] byteCnt == 8u;
+	[3] wait == 0u;
+
+Results of interprocedural value propagation:
+
+   static void CACHE_invL1d() has these parameter attributes:
+      unsigned byteCnt :  byteCnt == 8u;
+      unsigned wait :     wait == 0u;
+Inlineable function will be suppressed: tomp_semAcquire()
+Inlineable function will be suppressed: tomp_semRelease()
+Inlineable function will be suppressed: tomp_invalidatePrefetchBuffer()
+Inlineable function will be suppressed: inv_and_release_lock()
+Inlineable function will be suppressed: acquire_lock_and_inv()
+Inlineable function will be suppressed: CACHE_invL2()
+Inlineable function will be suppressed: CACHE_invL1d()
+Inlineable function will be suppressed: CACHE_AsmNop()
+Inlineable function will be suppressed: tomp_cacheInv()
+Inlineable function will be suppressed: tomp_mfence()
+Inlineable function will be suppressed: release_dsp_heap_lock()
+Inlineable function will be suppressed: acquire_dsp_heap_lock()
+Inlineable function will be suppressed: CACHE_invL2Wait()
+Inlineable function will be suppressed: CACHE_invL1dWait()
+
+These external functions are called but not defined here:
+	memcpy()
+	_disable_interrupts()
+	_mfence()
+	_restore_interrupts()
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#3 in __ti_dsp_memalign() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+		====== Unroll-and-jam Result Summary ======
+
+LOOP#3 in __ti_dsp_memalign() fails to unroll-and-jam: Outer Loop has multiple blocks
+
+		====== End Unroll-and-jam Result ======
+
+
+There are 6 memory accesses with 4 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 5 memory accesses with 20 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 7 memory accesses with 15 dependences.
+
+
+There are 12 memory accesses with 45 dependences.
+
+
+There are 19 memory accesses with 79 dependences.
+
+
+There are 27 memory accesses with 146 dependences.
+
+
+There are 20 memory accesses with 78 dependences.
+
+
+There are 19 memory accesses with 79 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+There are 4 memory accesses with 2 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+== END OF INFO OUTPUT==

@@ -1,0 +1,13 @@
+Package: kernel-module-cmemk
+Version: 4.14.01.00+git0+b687f3c365-r7b.0
+Description: cmemk kernel module
+ cmemk kernel module
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: am57xx_evm
+OE: cmem-mod
+Homepage: http://processors.wiki.ti.com/index.php/Category:CMEM
+Depends: kernel-4.9.69-g9ce43c71ae
+Source: cmem-mod_git.bb

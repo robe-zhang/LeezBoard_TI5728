@@ -1,0 +1,15 @@
+Package: glib-networking
+Version: 2.48.2-r0.0
+Description: GLib networking extensions
+ glib-networking contains the implementations of certain GLib networking
+ features that cannot be implemented directly in GLib itself because of
+ their dependencies.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2
+Architecture: armv7ahf-neon
+OE: glib-networking
+Homepage: http://git.gnome.org/browse/glib-networking/
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libgmp10 (>= 6.1.1), libgnutls30 (>= 3.5.3), libidn11 (>= 1.33), libpcre1 (>= 8.39), libz1 (>= 1.2.8), nettle (>= 3.2)
+Source: glib-networking_2.48.2.bb

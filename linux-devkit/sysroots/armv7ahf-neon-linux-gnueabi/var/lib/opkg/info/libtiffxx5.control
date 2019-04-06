@@ -1,0 +1,13 @@
+Package: libtiffxx5
+Version: 4.0.7-r0.arago0.0
+Description: Provides support for the Tag Image File Format (TIFF)
+ Provides support for the Tag Image File Format (TIFF).
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-2-Clause
+Architecture: armv7ahf-neon
+OE: tiff
+Depends: libc6 (>= 2.23), libgcc-s1 (>= 6.2.1), libjpeg62 (>= 1.5.0), libstdc++6 (>= 6.2.1), libtiff5 (>= 4.0.7), libz1 (>= 1.2.8)
+Provides: tiffxx
+Source: tiff_4.0.7.bb

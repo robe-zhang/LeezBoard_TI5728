@@ -1,0 +1,15 @@
+Package: faad2-dev
+Version: 2.7-r1.0
+Description: Library for reading some sort of media format - Development files
+ Library for reading some sort of media format.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7ahf-neon
+OE: faad2
+Depends: faad2 (= 2.7-r1.0)
+Recommends: libc6-dev, libfaad-dev
+Source: faad2_2.7.bb

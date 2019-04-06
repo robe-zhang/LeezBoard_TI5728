@@ -1,0 +1,12 @@
+Package: openssl-conf
+Version: 1.0.2j-r0.arago0.0
+Description: Secure Socket Layer
+ Secure Socket Layer (SSL) binary and related cryptographic tools.
+Section: libs/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: openssl
+Architecture: armv7ahf-neon
+OE: openssl
+Homepage: http://www.openssl.org/
+Source: openssl_1.0.2j.bb

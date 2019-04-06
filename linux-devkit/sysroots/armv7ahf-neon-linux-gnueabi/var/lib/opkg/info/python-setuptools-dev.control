@@ -1,0 +1,16 @@
+Package: python-setuptools-dev
+Version: 22.0.5-r0.0
+Description: Download, build, install, upgrade, and uninstall Python packages - Development files
+ Download, build, install, upgrade, and uninstall Python packages.  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-setuptools
+Homepage: https://pypi.python.org/pypi/setuptools
+Depends: python-setuptools (= 22.0.5-r0.0)
+Recommends: python-compile-dev, python-compression-dev, python-ctypes-dev, python-dev, python-distutils-dev, python-email-dev, python-html-dev, python-netserver-dev, python-numbers-dev, python-pkgutil-dev, python-plistlib-dev, python-shell-dev, python-stringold-dev, python-subprocess-dev, python-unittest-dev
+Source: python-setuptools_22.0.5.bb

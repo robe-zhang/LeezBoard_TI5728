@@ -1,0 +1,13 @@
+Package: nativesdk-python-ctypes
+Version: 2.7.12-r1.0
+Description: Python C types support
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-python
+Homepage: http://www.python.org
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libffi6 (>= 3.2.1), nativesdk-libpython2.7-1.0 (>= 2.7.12), nativesdk-python-core
+Source: python_2.7.12.bb

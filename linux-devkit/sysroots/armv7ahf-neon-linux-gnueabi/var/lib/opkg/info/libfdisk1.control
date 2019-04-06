@@ -1,0 +1,13 @@
+Package: libfdisk1
+Version: 2.28.1-r0.0
+Description: util-linux libfdisk
+ util-linux libfdisk
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+ & BSD
+Architecture: armv7ahf-neon
+OE: util-linux
+Depends: libblkid1 (>= 2.28.1), libc6 (>= 2.23), libuuid1 (>= 2.28.1)
+Provides: util-linux-libfdisk
+Source: util-linux_2.28.1.bb

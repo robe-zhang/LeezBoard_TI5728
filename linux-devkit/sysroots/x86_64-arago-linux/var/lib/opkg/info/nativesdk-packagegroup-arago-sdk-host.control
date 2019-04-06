@@ -1,0 +1,12 @@
+Package: nativesdk-packagegroup-arago-sdk-host
+Version: 1.0-r16.0
+Description: Host packages for a standalone Arago SDK or external toolchain
+ Host packages for a standalone Arago SDK or external toolchain.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: x86_64-nativesdk
+OE: nativesdk-packagegroup-arago-sdk-host
+Depends: nativesdk-autoconf, nativesdk-automake, nativesdk-clacc, nativesdk-clocl, nativesdk-cmake, nativesdk-git, nativesdk-libtool, nativesdk-makedevs, nativesdk-mtd-utils-ubifs, nativesdk-opkg, nativesdk-pkgconfig, nativesdk-python-distutils, nativesdk-shadow, nativesdk-ti-cgt-pru, nativesdk-ti-cgt6x
+Source: nativesdk-packagegroup-arago-sdk-host.bb

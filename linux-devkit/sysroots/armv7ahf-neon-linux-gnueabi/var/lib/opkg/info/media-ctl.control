@@ -1,0 +1,12 @@
+Package: media-ctl
+Version: 1.10.1-r0.0
+Description: v4l2 and IR applications
+ v4l2 and IR applications.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2 & LGPLv2.1
+Architecture: armv7ahf-neon
+OE: v4l-utils
+Depends: libc6 (>= 2.23), libv4l (>= 1.10.1)
+Source: v4l-utils_1.10.1.bb

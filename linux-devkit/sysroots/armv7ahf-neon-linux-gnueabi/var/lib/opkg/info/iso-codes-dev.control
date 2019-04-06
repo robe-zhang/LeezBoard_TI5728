@@ -1,0 +1,14 @@
+Package: iso-codes-dev
+Version: 3.70-r0.0
+Description: ISO language, territory, currency, script codes and their translations - Development files
+ ISO language, territory, currency, script codes and their translations.
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: all
+OE: iso-codes
+Depends: iso-codes (= 3.70-r0.0)
+Source: iso-codes_3.70.bb

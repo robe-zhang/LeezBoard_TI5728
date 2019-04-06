@@ -1,0 +1,12 @@
+/usr/lib/libicss_emac.so
+/usr/include/ti/drv/icss_emac/icss_emacDrv.h
+/usr/include/ti/drv/icss_emac/icss_emacCommon.h
+/usr/include/ti/drv/icss_emac/include/
+/usr/include/ti/drv/icss_emac/
+/usr/include/ti/drv/
+/usr/include/ti/drv/icss_emac/icss_emacLearning.h
+/usr/include/ti/drv/icss_emac/icss_emac_ver.h
+/usr/include/ti/drv/icss_emac/icss_emacFwInit.h
+/usr/include/ti/drv/icss_emac/icss_emacDrv_Def.h
+/usr/include/ti/drv/icss_emac/icss_emacStormControl.h
+/usr/include/ti/drv/icss_emac/icss_emacStatistics.h

@@ -1,0 +1,16 @@
+Package: openssl-dev
+Version: 1.0.2j-r0.arago0.0
+Description: Secure Socket Layer - Development files
+ Secure Socket Layer (SSL) binary and related cryptographic tools.  This
+ package contains symbolic links, header files, and related items
+ necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: openssl
+Architecture: armv7ahf-neon
+OE: openssl
+Homepage: http://www.openssl.org/
+Depends: libcrypto1.0.0, libssl1.0.0, openssl (= 1.0.2j-r0.arago0.0)
+Recommends: cryptodev-linux-dev, cryptodev-module-dev, libc6-dev, libcrypto-dev, libssl-dev, openssl-conf-dev
+Source: openssl_1.0.2j.bb

@@ -1,0 +1,89 @@
+TMS320C6x C/C++ Optimizer               v8.2.2
+Build Number 1RK5R-2LI-VATAQ-TAR-C08D
+Making GOMP_ordered_end a function synonym of __gomp_flush0
+
+extern void GOMP_ordered_end() is called from 0 sites in this file.
+    It appears to be inlineable (size = 2 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	__gomp_flush0() (1 times)
+
+extern void GOMP_ordered_start() is called from 0 sites in this file.
+    It appears to be inlineable (size = 3 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	__gomp_flush0() (1 times)
+	gomp_ordered_sync() (1 times)
+
+extern void gomp_ordered_first() is called from 0 sites in this file.
+    It appears to be inlineable (size = 56 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void gomp_ordered_last() is called from 0 sites in this file.
+    It appears to be inlineable (size = 50 units)
+    It has 4 non-trivial scope blocks nested 4 deep.
+    It calls these functions:
+	<NONE>
+
+extern void gomp_ordered_next() is called from 0 sites in this file.
+    It appears to be inlineable (size = 85 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void gomp_ordered_static_init() is called from 0 sites in this file.
+    It appears to be inlineable (size = 18 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void gomp_ordered_static_next() is called from 0 sites in this file.
+    It appears to be inlineable (size = 44 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void gomp_ordered_sync() is called from 1 sites in this file.
+    It appears to be inlineable (size = 53 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+
+These functions may be recursive:
+	GOMP_ordered_end()
+	GOMP_ordered_start()
+
+Making this function inlineable: gomp_ordered_sync()
+
+These external functions are called but not defined here:
+	__gomp_flush0()
+
+
+There are 10 memory accesses with 7 dependences.
+
+
+There are 9 memory accesses with 6 dependences.
+
+
+There are 4 memory accesses with 2 dependences.
+
+
+There are 17 memory accesses with 26 dependences.
+
+
+There are 12 memory accesses with 20 dependences.
+
+
+There are 11 memory accesses with 8 dependences.
+
+
+There are 10 memory accesses with 7 dependences.
+
+
+There are -1 memory accesses with 0 dependences.
+
+
+== END OF INFO OUTPUT==

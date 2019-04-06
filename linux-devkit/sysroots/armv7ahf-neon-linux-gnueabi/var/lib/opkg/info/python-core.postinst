@@ -1,0 +1,5 @@
+#!/bin/sh
+# Begin section update-alternatives
+update-alternatives --install /usr/bin/python python /usr/bin/python.python 100
+update-alternatives --install /usr/bin/python-config python_config /usr/bin/python-config.python 100
+# End section update-alternatives

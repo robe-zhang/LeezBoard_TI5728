@@ -1,0 +1,12 @@
+obj/tda2xx-evm/a15/release/edma3_tda2xx_cfg.oa15fg: \
+ src/configs/edma3_tda2xx_cfg.c ../../../../ti/sdo/edma3/rm/edma3_rm.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ ../../../../ti/sdo/edma3/rm/edma3_common.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h \
+ /oe/bld/build-CORTEX_1/arago-tmp-external-linaro-toolchain/sysroots/x86_64-linux/usr/share/ti/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h

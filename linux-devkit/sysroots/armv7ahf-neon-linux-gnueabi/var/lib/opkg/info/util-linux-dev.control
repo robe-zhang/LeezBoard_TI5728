@@ -1,0 +1,19 @@
+Package: util-linux-dev
+Version: 2.28.1-r0.0
+Description: A suite of basic system administration utilities - Development files
+ Util-linux includes a suite of basic system administration utilities
+ commonly found on most Linux systems.  Some of the more important
+ utilities include disk partitioning, kernel message management,
+ filesystem creation, and system login.  This package contains symbolic
+ links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+ & BSD
+Architecture: armv7ahf-neon
+OE: util-linux
+Depends: libblkid1, libfdisk1, libmount1, libsmartcols1, libuuid1, util-linux (= 2.28.1-r0.0)
+Recommends: bash-completion-dev, libc6-dev, libpam-dev, libz-dev, ncurses-dev, ncurses-libncursesw-dev, ncurses-libtinfo-dev, update-alternatives-opkg-dev, util-linux-libblkid-dev, util-linux-libfdisk-dev, util-linux-libmount-dev, util-linux-libsmartcols-dev, util-linux-libuuid-dev, util-linux-losetup-dev, util-linux-runuser-dev, util-linux-sulogin-dev, util-linux-swaponoff-dev, util-linux-umount-dev
+Provides: util-linux-libblkid-dev, util-linux-libmount-dev, util-linux-libuuid-dev
+Source: util-linux_2.28.1.bb

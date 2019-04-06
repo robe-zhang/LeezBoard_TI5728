@@ -1,0 +1,13 @@
+Package: libgphoto2-port12
+Version: 2.5.8-r0.tisdk0.0
+Description: libgphoto2 allows you to access digital cameras
+ libgphoto2 allows you to access digital cameras.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7ahf-neon
+OE: libgphoto2
+Depends: libc6 (>= 2.23), libltdl7 (>= 2.4.6)
+Provides: libgphotoport
+Source: libgphoto2_2.5.8.bb

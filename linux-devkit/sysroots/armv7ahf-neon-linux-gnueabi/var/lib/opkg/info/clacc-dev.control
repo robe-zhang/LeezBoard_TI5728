@@ -1,0 +1,15 @@
+Package: clacc-dev
+Version: 1.5.3.0-r0.1.0
+Description: TI OpenMP Accelerator Model - Development files
+ TI OpenMP Accelerator Model.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7ahf-neon
+OE: clacc
+Homepage: http://downloads.ti.com/mctools/esd/docs/openmpacc/
+Depends: clacc (= 1.5.3.0-r0.1.0)
+Recommends: boost-dev, clocl-dev, elfutils-dev, libc6-dev, libelf-dev, libgcc-s-dev, libstdc++-dev
+Source: clacc_git.bb

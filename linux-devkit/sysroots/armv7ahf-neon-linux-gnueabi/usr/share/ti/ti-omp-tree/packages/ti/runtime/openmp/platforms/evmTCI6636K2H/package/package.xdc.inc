@@ -1,0 +1,13 @@
+package.xdc
+Platform.xdc
+Platform.xs
+package/ti.runtime.openmp.platforms.evmTCI6636K2H.sch
+package/.vers_g200
+package/.vers_r200
+package/.vers_b200
+package/.xdc-D20
+package/ti_runtime_openmp_platforms_evmTCI6636K2H.java
+package/ti_runtime_openmp_platforms_evmTCI6636K2H.class
+package/package_ti.runtime.openmp.platforms.evmTCI6636K2H.c
+package/package.defs.h
+package/ti.runtime.openmp.platforms.evmTCI6636K2H.ccs

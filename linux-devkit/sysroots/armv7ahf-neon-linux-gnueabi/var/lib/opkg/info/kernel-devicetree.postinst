@@ -1,0 +1,10 @@
+	cd /boot
+	for DTB in am57xx-beagle-x15.dtb am57xx-beagle-x15-revb1.dtb am57xx-beagle-x15-revc.dtb am57xx-evm.dtb am57xx-evm-cam-mt9t111.dtb am57xx-evm-cam-ov10635.dtb am57xx-evm-reva3.dtb am57xx-evm-reva3-cam-mt9t111.dtb am57xx-evm-reva3-cam-ov10635.dtb am571x-idk.dtb am571x-idk-lcd-osd101t2045.dtb am571x-idk-lcd-osd101t2587.dtb am572x-idk.dtb am572x-idk-lcd-osd101t2045.dtb am572x-idk-lcd-osd101t2587.dtb am574x-idk.dtb am574x-idk-lcd-osd101t2587.dtb am574x-idk-pru-excl-uio.dtb am572x-idk-pru-excl-uio.dtb am571x-idk-pru-excl-uio.dtb     am572x-evm-jailhouse.dtb     am572x-idk-jailhouse.dtb     am572x-idk-lcd-osd101t2045-jh.dtb     am572x-idk-lcd-osd101t2587-jh.dtb     am574x-idk-jailhouse.dtb     am571x-idk-pps.dtb     am572x-idk-pps.dtb ; do
+		for type in zImage uImage; do
+			symlink_name=${type}"-"am57xx-evm
+			DTB_EXT=${DTB##*.}
+			DTB_BASE_NAME=`basename ${DTB} ."${DTB_EXT}"`
+			DTB_SYMLINK_NAME=`echo ${symlink_name} | sed "s/am57xx-evm/${DTB_BASE_NAME}/g"`
+			update-alternatives --install /boot/${DTB_BASE_NAME}.${DTB_EXT} ${DTB_BASE_NAME}.${DTB_EXT} /boot/devicetree-${DTB_SYMLINK_NAME}.${DTB_EXT} 40969 || true
+		done
+	done

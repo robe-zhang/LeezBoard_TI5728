@@ -1,0 +1,16 @@
+Package: libsndfile-dev
+Version: 1.0.27-r0.0
+Description: Audio format Conversion library - Development files
+ Audio format Conversion library.  This package contains symbolic links,
+ header files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7ahf-neon
+OE: libsndfile1
+Homepage: http://www.mega-nerd.com/libsndfile
+Depends: libsndfile1 (= 1.0.27-r0.0)
+Recommends: alsa-lib-dev, flac-dev, libasound-dev, libc6-dev, libflac-dev, libogg-dev, libsqlite3-dev, libvorbis-dev, sqlite3-dev
+Provides: libsndfile1-dev
+Source: libsndfile1_1.0.27.bb

@@ -1,0 +1,20 @@
+Package: wayland-dev
+Version: 1.11.0-r0.0
+Description: Wayland, a protocol between a compositor and clients - Development files
+ Wayland is a protocol for a compositor to talk to its clients as well as
+ a C library implementation of that protocol. The compositor can be a
+ standalone display server running on Linux kernel modesetting and evdev
+ input devices, an X application, or a wayland client itself. The clients
+ can be traditional applications, X servers (rootless or fullscreen) or
+ other display servers.  This package contains symbolic links, header
+ files, and related items necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: wayland
+Homepage: http://wayland.freedesktop.org
+Depends: libc6 (>= 2.23), libexpat1 (>= 2.2.0), libxml2 (>= 2.9.4), libz1 (>= 1.2.8), wayland (= 1.11.0-r0.0)
+Recommends: libc6-dev, libexpat-dev, libffi-dev, libxml2-dev, libz-dev
+Source: wayland_1.11.0.bb

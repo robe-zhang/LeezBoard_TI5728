@@ -1,0 +1,6 @@
+#!/bin/sh
+# Begin section update-rc.d
+if [ -z "$D" -a -x "/etc/init.d/rc.pvr" ]; then
+	/etc/init.d/rc.pvr stop || :
+fi
+# End section update-rc.d

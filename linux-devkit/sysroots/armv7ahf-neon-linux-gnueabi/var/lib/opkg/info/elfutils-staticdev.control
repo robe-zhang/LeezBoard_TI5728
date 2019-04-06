@@ -1,0 +1,14 @@
+Package: elfutils-staticdev
+Version: 0.148-r11.0
+Description: Utilities and libraries for handling compiled object files - Development files (Static Libraries)
+ Utilities and libraries for handling compiled object files.  This package
+ contains static libraries for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: (GPL-2+ & Elfutils-Exception)
+Architecture: armv7ahf-neon
+OE: elfutils
+Homepage: https://fedorahosted.org/elfutils
+Depends: elfutils-dev (= 0.148-r11.0)
+Source: elfutils_0.148.bb

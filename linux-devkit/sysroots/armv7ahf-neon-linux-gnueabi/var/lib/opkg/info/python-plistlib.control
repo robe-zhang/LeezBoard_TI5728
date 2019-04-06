@@ -1,0 +1,13 @@
+Package: python-plistlib
+Version: 2.7.12-r1.0
+Description: Generate and parse Mac OS X .plist files
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: armv7ahf-neon
+OE: python
+Homepage: http://www.python.org
+Depends: python-core, python-datetime, python-io
+Source: python_2.7.12.bb

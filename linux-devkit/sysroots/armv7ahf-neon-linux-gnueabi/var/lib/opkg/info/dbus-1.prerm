@@ -1,0 +1,6 @@
+#!/bin/sh
+# Begin section update-rc.d
+if [ -z "$D" -a -x "/etc/init.d/dbus-1" ]; then
+	/etc/init.d/dbus-1 stop || :
+fi
+# End section update-rc.d

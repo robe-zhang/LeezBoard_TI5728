@@ -1,0 +1,13 @@
+Package: wpantund
+Version: stable-r0.0
+Description: wpantund version stable-r0
+ Openthread border controller
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Apache-2.0
+Architecture: armv7ahf-neon
+OE: wpantund
+Homepage: https://github.com/openthread
+Depends: libc6 (>= 2.23), libcap2 (>= 2.25), libdbus-1-3 (>= 1.10.10), libgcc-s1 (>= 6.2.1), liblzma5 (>= 5.2.2), libncurses5 (>= 6.0+20160625), libreadline6 (>= 6.3), libstdc++6 (>= 6.2.1), libsystemd0 (>= 230+git0+3a74d4fc90)
+Source: wpantund_git.bb

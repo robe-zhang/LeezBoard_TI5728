@@ -1,0 +1,15 @@
+Package: tiovx-sys-iface
+Version: 01.00.01.00-r1.0
+Description: TI OpenVX interface header files between TIOVX library and HOST, DSP IPC side implementation 
+ Collection of header files needed to defined interface between TIOVX
+ library and HOST and DSP IPC side implementation. In order to maintain
+ source compatibility, directory structure follows VSDK source tree
+ layout.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: TI-TSPA
+Architecture: am57xx_evm
+OE: tiovx-sys-iface
+Depends: update-alternatives-opkg
+Source: tiovx-sys-iface.bb

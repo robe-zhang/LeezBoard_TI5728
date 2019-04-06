@@ -1,0 +1,2 @@
+#!/bin/sh
+update-alternatives --install /boot/zImage zImage /boot/zImage-4.9.69-g9ce43c71ae 40969 || true

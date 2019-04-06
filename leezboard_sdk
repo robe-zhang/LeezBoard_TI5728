@@ -1,0 +1,89 @@
+#!/bin/bash
+
+# ==============================以下全部不用动   robe 2019.1.20
+# env 
+UBOOT=board-support/u-boot-2017.01+gitAUTOINC+c68ed086bd-gc68ed086bd
+LINUX=board-support/linux-4.9.69+gitAUTOINC+9ce43c71ae-g9ce43c71ae
+PWD=`pwd`
+# PWD=$(pwd)
+UBOOTDIR=${PWD}/${UBOOT}
+LINUXDIR=${PWD}/${LINUX}
+
+UBOOT_defconfig=LenovoPi_defconfig
+#LINUX_defconfig=tisdk_am57xx-evm_defconfig
+LINUX_defconfig=LenovoPi_defconfig
+
+
+
+# uboot output file.
+MLOfile=${UBOOTDIR}/MLO
+UBOOTfile=${UBOOTDIR}/u-boot.img
+
+# linux output file.
+KERNELfile=${LINUXDIR}/arch/arm/boot/zImage
+DTBfile=${LINUXDIR}/arch/arm/boot/dts/LenovoPi.dtb
+DTB_file=LenovoPi.dtb
+LEEZBOARD_MODULES_FOLDER=${PWD}/leezboard_modules
+LEEZBOARD_MODULES_TAR=${LEEZBOARD_MODULES_FOLDER}.tar
+
+# env
+ARCH=arm
+# CROSS_COMPILE=arm-linux-gnueabihf-
+# export PATH=${PATH}:${PWD}/linux-devkit/sysroots/x86_64-arago-linux/usr/bin
+CROSS_COMPILE=${PWD}/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf-
+export ARCH CROSS_COMPILE
+
+# CROSS_COMPILE=/home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf- make LenovoPi_defconfig
+# CROSS_COMPILE=/home/robe/ti-processor-sdk-linux-am57xx-evm-04.03.00.05/linux-devkit/sysroots/x86_64-arago-linux/usr/bin/arm-linux-gnueabihf- make menuconfig
+
+# ROOTFS
+build_rootfs_with_MODULES=yes
+
+# ==============================以上全部不用动   robe 2019.1.20
+
+# ==============================以下需要根据自己情况修改   robe 2019.1.20
+# imagepath 是从网盘下载的固件，解压后的目录
+imagepath=/datadisk/leezboard/leezboard_TI5708/firmware/LenovoPi_programming_4.3
+
+# 这三个变量，可以把sd卡烧录一次后，插到电脑上，能看到自动挂载的目录默认应该是 /media/{name}/boot  和  rootfs	
+sdcard_boot=/media/robe/boot
+sdcard_root=/media/robe/rootfs
+sdcard_root_boot=/media/robe/rootfs/boot
+
+# 这个是 sd 卡设备文件，这里要不要都可以，leezboard_sdcard 文件中也有这个变量，会把这个覆盖掉
+sdcard=/dev/sdc
+
+# ==============================build SD card ENV
+linux_image_path=/datadisk/leezboard
+
+debian9_tar=${linux_image_path}/debian_stretch.tar
+ubuntu18_tar=${linux_image_path}/ubuntu_18.04_lts.tar
+ubuntu16_tar=${linux_image_path}/ubuntu_16.04_lts.tar
+
+debian9_folder=${linux_image_path}/debian_stretch
+ubuntu18_folder=${linux_image_path}/ubuntu_18.04_lts
+ubuntu16_folder=${linux_image_path}/ubuntu_16.04_lts
+
+# ==============================build Image file ENV
+image_file=${PWD}/Image_file.img
+loop=/dev/loop0
+loop_mmount=/mnt/loop0
+
+image_debian9_folder=${PWD}/image_debian_stretch
+image_ubuntu18_folder=${PWD}/image_ubuntu_18.04_lts
+image_ubuntu16_folder=${PWD}/image_ubuntu_16.04_lts
+
+image_debian9=${PWD}/Image_debian9_burn_to_SDcard.img
+image_ubuntu18=${PWD}/Image_ubuntu18.04_lts_burn_to_SDcard.img
+image_ubuntu16=${PWD}/Image_ubuntu16.04_lts_burn_to_SDcard.img
+
+# =============================build debian desktop 
+image_debian9_desktop_tar=${linux_image_path}/debian_stretch_desktop.tar
+image_debian9_desktop_patch=${linux_image_path}/resize2fs_eth0_apt_TO_DEBIAN_IMAGE_patch
+image_debian9_desktop=${PWD}/Image_debian9_desktop_burn_to_SDcard.img
+
+
+
+
+
+

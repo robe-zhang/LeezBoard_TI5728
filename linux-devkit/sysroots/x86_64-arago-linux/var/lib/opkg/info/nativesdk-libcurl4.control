@@ -1,0 +1,15 @@
+Package: nativesdk-libcurl4
+Version: 7.50.1-r0.0
+Description: Command line tool and library for client-side URL transfers
+ Command line tool and library for client-side URL transfers.
+Section: console/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: x86_64-nativesdk
+OE: nativesdk-curl
+Homepage: http://curl.haxx.se/
+Depends: nativesdk-libc6 (>= 2.24), nativesdk-libcrypto1.0.0 (>= 1.0.2j), nativesdk-libssl1.0.0 (>= 1.0.2j), nativesdk-libz1 (>= 1.2.8)
+Recommends: nativesdk-ca-certificates
+Provides: nativesdk-libcurl
+Source: curl_7.50.1.bb

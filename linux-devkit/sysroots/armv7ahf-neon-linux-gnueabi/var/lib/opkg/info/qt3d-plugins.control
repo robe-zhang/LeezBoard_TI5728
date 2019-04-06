@@ -1,0 +1,12 @@
+Package: qt3d-plugins
+Version: 5.7.1+git0+0eac16fbda-r0.0
+Description: qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0
+ qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 | GPL-2.0
+Architecture: armv7ahf-neon
+OE: qt3d
+Depends: assimp (>= 3.3.1), libc6 (>= 2.23), libgcc-s1 (>= 6.2.1), libstdc++6 (>= 6.2.1), qt3d (>= 5.7.1+git0+0eac16fbda), qtbase (>= 5.7.1+git0+a55f36211e), ti-sgx-ddk-um (>= 1.14.3699939)
+Source: qt3d_git.bb

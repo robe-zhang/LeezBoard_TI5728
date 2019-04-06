@@ -1,0 +1,13 @@
+Package: bash
+Version: 3.2.57-r0.arago0.0
+Description: An sh-compatible command language interpreter
+ An sh-compatible command language interpreter.
+Section: base/shell
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: bash
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Depends: base-files, libc6 (>= 2.23), libtinfo5 (>= 6.0+20160625), update-alternatives-opkg
+Source: bash_3.2.57.bb

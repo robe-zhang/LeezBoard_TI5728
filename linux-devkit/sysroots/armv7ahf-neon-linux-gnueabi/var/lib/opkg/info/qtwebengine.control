@@ -1,0 +1,13 @@
+Package: qtwebengine
+Version: 5.7.1+git0+9cc97f0c63_b3c79e92f0-r0.arago0.0
+Description: QtWebEngine combines the power of Chromium and Qt
+ QtWebEngine combines the power of Chromium and Qt.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 & BSD & GPL-3.0 & The-Qt-Company-GPL-Exception-1.0
+Architecture: armv7ahf-neon
+OE: qtwebengine
+Depends: libc6 (>= 2.23), libevent (>= 2.0.22), libfontconfig1 (>= 2.12.1), libfreetype6 (>= 2.6.5), libgcc-s1 (>= 6.2.1), libjpeg62 (>= 1.5.0), libpng16-16 (>= 1.6.24), libqt5webchannel5 (>= 5.7.1+git0+31eb0d8c7d), libstdc++6 (>= 6.2.1), libwebp (>= 0.5.1), libxml2 (>= 2.9.4), libxslt (>= 1.1.29), qtbase (>= 5.7.1+git0+a55f36211e), qtdeclarative (>= 5.7.1+git0+2a992040e2), qtlocation (>= 5.7.1+git0+de5be121d8), ti-sgx-ddk-um (>= 1.14.3699939)
+Recommends: qtwebengine-plugins, qtwebengine-qmlplugins
+Source: qtwebengine_git.bb

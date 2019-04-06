@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sdk_env_file=./leezboard_sdk
+sdk_sdcard_file=./leezboard_sdcard
+sdk_modules_file=./leezboard_mod
+source ${sdk_env_file}
+source ${sdk_sdcard_file}
+source ${sdk_modules_file}
+
+do_something

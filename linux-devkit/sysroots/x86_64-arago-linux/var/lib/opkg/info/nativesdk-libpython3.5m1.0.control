@@ -1,0 +1,14 @@
+Package: nativesdk-libpython3.5m1.0
+Version: 3.5.2-r1.0.0
+Description: The Python Programming Language
+ The Python Programming Language.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: PSFv2
+Architecture: x86_64-nativesdk
+OE: nativesdk-python3
+Homepage: http://www.python.org
+Depends: nativesdk-libc6 (>= 2.24)
+Provides: nativesdk-libpython3
+Source: python3_3.5.2.bb

@@ -1,0 +1,17 @@
+Package: libopencl-dev
+Version: 1.1.14.10-r0.0.0
+Description: opencl version 1.1.14.10-r0.0 - Development files
+ TI OpenCL host runtime and development packages  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: opencl
+Homepage: http://software-dl.ti.com/mctools/docs/opencl/intro.html
+Depends: libopencl1 (= 1.1.14.10-r0.0.0), ocl-gl-headers-dev, opencl-monitor
+Recommends: bash-dev, binutils-dev, boost-dev, clocl-dev, elfutils-dev, libc6-dev, libelf-dev, libffi-dev, libgcc-s-dev, libjson-c-dev, libloki-dev, libsqlite3-dev, libstdc++-dev, libticmem-dev, libulm-dev, ocl-gl-headers-dev, opencl-monitor-dev, sqlite3-dev, ti-cgt6x-dev, ti-ipc-dev, ti-llvm3.6-dev
+Provides: opencl-dev
+Source: opencl_git.bb

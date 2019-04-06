@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "d
+2
+n
+p
+2
+
+
+N
+w
+" | fdisk /dev/mmcblk0
+
+
+

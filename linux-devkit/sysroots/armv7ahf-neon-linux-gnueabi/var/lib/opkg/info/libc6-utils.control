@@ -1,0 +1,14 @@
+Package: libc6-utils
+Version: 2.23-r0.arago36.0
+Description: Miscellaneous utilities provided by glibc
+ Miscellaneous utilities including getconf, iconv, locale, gencat, rpcgen,
+ ...
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-2.1&GPL-3.0&GPL-3.0-with-GCC-exception&GPL-3.0
+Architecture: armv7ahf-neon
+OE: external-linaro-toolchain
+Depends: libc6 (>= 2.23)
+Provides: external-linaro-toolchain-utils, glibc-utils
+Source: external-linaro-toolchain.bb

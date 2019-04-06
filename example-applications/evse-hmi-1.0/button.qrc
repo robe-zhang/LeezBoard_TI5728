@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/button">
+        <file>home-button.png</file>
+    </qresource>
+</RCC>

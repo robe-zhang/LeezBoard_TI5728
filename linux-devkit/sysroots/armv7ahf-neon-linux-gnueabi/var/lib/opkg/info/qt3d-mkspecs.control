@@ -1,0 +1,11 @@
+Package: qt3d-mkspecs
+Version: 5.7.1+git0+0eac16fbda-r0.0
+Description: qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0
+ qt3d version 5.7.1+gitAUTOINC+0eac16fbda-r0.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 | GPL-2.0
+Architecture: armv7ahf-neon
+OE: qt3d
+Source: qt3d_git.bb

@@ -1,0 +1,15 @@
+Package: qtwayland-dev
+Version: 5.7.1+git0+4b23163fb6-r0.arago0.0
+Description: qtwayland version 5.7.1+gitAUTOINC+4b23163fb6-r0.arago0 - Development files
+ qtwayland version 5.7.1+gitAUTOINC+4b23163fb6-r0.arago0.  This package
+ contains symbolic links, header files, and related items necessary for
+ software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GFDL-1.3 & BSD & ( GPL-3.0 & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0+ | LGPL-3.0 | The-Qt-Company-Commercial )
+Architecture: armv7ahf-neon
+OE: qtwayland
+Depends: qtwayland (= 5.7.1+git0+4b23163fb6-r0.arago0.0)
+Recommends: libc6-dev, libdrm-omap-dev, libfontconfig-dev, libfreetype-dev, libgcc-s-dev, libstdc++-dev, libudev-dev, libxkbcommon-dev, qtbase-dev, qtdeclarative-dev, qtwayland, qtwayland-mkspecs, qtwayland-qmldesigner, ti-sgx-ddk-um-dev, wayland-dev, xproto-dev
+Source: qtwayland_git.bb

@@ -1,0 +1,13 @@
+Package: libllvm3.6-llvm-3.6
+Version: 3.6-r6.0
+Description: Split package for llvm-3.6
+ Split package for llvm-3.6
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: NCSA
+Architecture: armv7ahf-neon
+OE: ti-llvm3.6
+Homepage: http://llvm.org
+Depends: libc6 (>= 2.23), libffi6 (>= 3.2.1), libgcc-s1 (>= 6.2.1), libstdc++6 (>= 6.2.1), ti-llvm3.6
+Source: ti-llvm3.6_3.6.bb

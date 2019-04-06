@@ -1,0 +1,19 @@
+#!/bin/sh
+# Begin section update-rc.d
+if [ -z "$D" -a -x "/etc/init.d/bluetooth" ]; then
+	/etc/init.d/bluetooth stop || :
+fi
+# End section update-rc.d
+OPTS=""
+
+if [ -n "$D" ]; then
+    OPTS="--root=$D"
+fi
+
+if type systemctl >/dev/null 2>/dev/null; then
+	if [ -z "$D" ]; then
+		systemctl stop bluetooth.service
+	fi
+
+	systemctl $OPTS disable bluetooth.service
+fi

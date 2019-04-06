@@ -1,0 +1,11 @@
+Package: qtwebengine-mkspecs
+Version: 5.7.1+git0+9cc97f0c63_b3c79e92f0-r0.arago0.0
+Description: QtWebEngine combines the power of Chromium and Qt
+ QtWebEngine combines the power of Chromium and Qt.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPL-3.0 & BSD & GPL-3.0 & The-Qt-Company-GPL-Exception-1.0
+Architecture: armv7ahf-neon
+OE: qtwebengine
+Source: qtwebengine_git.bb

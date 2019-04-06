@@ -1,0 +1,13 @@
+Package: gstreamer1.0-plugins-good-taglib
+Version: 1.8.3-r0.arago0.0
+Description: GStreamer plugin for taglib
+ GStreamer plugin for taglib
+Section: multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+ & LGPLv2.1+
+Architecture: armv7ahf-neon
+OE: gstreamer1.0-plugins-good
+Homepage: http://gstreamer.freedesktop.org/
+Depends: gstreamer1.0 (>= 1.8.3), libc6 (>= 2.23), libffi6 (>= 3.2.1), libgcc-s1 (>= 6.2.1), libglib-2.0-0 (>= 2.48.2), libgsttag-1.0-0 (>= 1.8.3), libpcre1 (>= 8.39), libstdc++6 (>= 6.2.1), libtag1 (>= 1.9.1), libz1 (>= 1.2.8)
+Source: gstreamer1.0-plugins-good_1.8.3.bb

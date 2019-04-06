@@ -1,0 +1,16 @@
+Package: opencv-dev
+Version: 3.1+git0+9b88e8c746-r3.0
+Description: Opencv : The Open Computer Vision Library - Development files
+ Opencv : The Open Computer Vision Library.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: am57xx_evm
+OE: opencv
+Homepage: http://opencv.org/
+Depends: opencv (= 3.1+git0+9b88e8c746-r3.0)
+Recommends: bzip2-dev, gstreamer1.0-dev, gstreamer1.0-plugins-base-dev, jpeg-dev, libeigen-dev, libglib-2.0-dev, libgphoto2-dev, libopencl-dev, libopencv-aruco-dev, libopencv-bgsegm-dev, libopencv-bioinspired-dev, libopencv-calib3d-dev, libopencv-ccalib-dev, libopencv-core-dev, libopencv-cvv-dev, libopencv-datasets-dev, libopencv-dnn-dev, libopencv-dpm-dev, libopencv-face-dev, libopencv-features2d-dev, libopencv-flann-dev, libopencv-fuzzy-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-line-descriptor-dev, libopencv-ml-dev, libopencv-objdetect-dev, libopencv-optflow-dev, libopencv-photo-dev, libopencv-plot-dev, libopencv-reg-dev, libopencv-rgbd-dev, libopencv-saliency-dev, libopencv-shape-dev, libopencv-stereo-dev, libopencv-stitching-dev, libopencv-structured-light-dev, libopencv-superres-dev, libopencv-surface-matching-dev, libopencv-text-dev, libopencv-tracking-dev, libopencv-ts-dev, libopencv-video-dev, libopencv-videoio-dev, libopencv-videostab-dev, libopencv-xfeatures2d-dev, libopencv-ximgproc-dev, libopencv-xobjdetect-dev, libopencv-xphoto-dev, libpng16-dev, libticmem-dev, libtiff-dev, libtool-dev, libwebp-dev, libz-dev, opencv-apps-dev, opencv-samples-dev, opencv-staticdev-dev, protobuf-dev, python-dev, python-numpy-dev, python-opencv-dev, qtbase-dev, qtwayland-dev, swig-dev, tbb-dev, v4l-utils-dev
+Source: opencv_3.1.bb

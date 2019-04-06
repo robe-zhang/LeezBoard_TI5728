@@ -1,0 +1,21 @@
+Package: libreadline-dev
+Version: 6.3-r0.0
+Description: Library for editing typed command lines - Development files
+ The GNU Readline library provides a set of functions for use by
+ applications that allow users to edit command lines as they are typed in.
+ Both Emacs and vi editing modes are available. The Readline library
+ includes  additional functions to maintain a list of previously-entered
+ command lines, to recall and perhaps reedit those   lines, and perform
+ csh-like history expansion on previous commands.  This package contains
+ symbolic links, header files, and related items necessary for software
+ development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv3+
+Architecture: armv7ahf-neon
+OE: readline
+Depends: libreadline6 (= 6.3-r0.0)
+Recommends: libc6-dev, ncurses-dev, ncurses-libtinfo-dev
+Provides: readline-dev
+Source: readline_6.3.bb

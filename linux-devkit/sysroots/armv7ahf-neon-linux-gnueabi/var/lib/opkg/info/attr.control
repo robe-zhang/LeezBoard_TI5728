@@ -1,0 +1,13 @@
+Package: attr
+Version: 2.4.47-r0.0
+Description: Utilities for manipulating filesystem extended attributes
+ Utilities for manipulating filesystem extended attributes.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7ahf-neon
+OE: attr
+Homepage: http://savannah.nongnu.org/projects/attr/
+Depends: libattr1 (>= 2.4.47), libc6 (>= 2.23)
+Source: attr_2.4.47.bb

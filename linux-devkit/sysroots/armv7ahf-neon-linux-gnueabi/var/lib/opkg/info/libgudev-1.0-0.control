@@ -1,0 +1,14 @@
+Package: libgudev-1.0-0
+Version: 230-r0.0
+Description: GObject wrapper for libudev
+ GObject wrapper for libudev.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7ahf-neon
+OE: libgudev
+Depends: libc6 (>= 2.23), libcap2 (>= 2.25), libffi6 (>= 3.2.1), libglib-2.0-0 (>= 2.48.2), libpcre1 (>= 8.39), libudev1 (>= 230+git0+3a74d4fc90), libz1 (>= 1.2.8)
+Provides: libgudev
+Conflicts: systemd (<= 220)
+Source: libgudev_230.bb

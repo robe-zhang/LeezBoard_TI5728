@@ -1,0 +1,17 @@
+Package: libticmem-dev
+Version: 4.14.01.00+git0+b687f3c365-r1.0
+Description: cmem version 4.14.01.00+gitAUTOINC+b687f3c365-r1 - Development files
+ The cmem component supports contiguous memory allocation from userspace
+ This package contains symbolic links, header files, and related items
+ necessary for software development.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7ahf-neon
+OE: cmem
+Homepage: http://processors.wiki.ti.com/index.php/Category:CMEM
+Depends: libticmem1 (= 4.14.01.00+git0+b687f3c365-r1.0)
+Recommends: cmem-mod-dev, libc6-dev
+Provides: cmem-dev
+Source: cmem_git.bb

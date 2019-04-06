@@ -1,0 +1,4 @@
+#deb http://deb.debian.org/debian stretch main
+
+deb http://mirrors.ustc.edu.cn/debian stretch main contrib non-free
+

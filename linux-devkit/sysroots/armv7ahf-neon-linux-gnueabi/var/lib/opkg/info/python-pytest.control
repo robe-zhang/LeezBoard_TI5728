@@ -1,0 +1,12 @@
+Package: python-pytest
+Version: 3.0.1-r0.0
+Description: Simple powerful teting with python
+ Simple powerful teting with python.
+Section: devel/python
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-neon
+OE: python-pytest
+Depends: python-argparse, python-debugger, python-json, python-py, python-setuptools
+Source: python-pytest_3.0.1.bb

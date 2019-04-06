@@ -1,0 +1,13 @@
+Package: ti-llvm3.6
+Version: 3.6-r6.0
+Description: ti-llvm3.6 version 3.6-r6
+ The Low Level Virtual Machine
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: NCSA
+Architecture: armv7ahf-neon
+OE: ti-llvm3.6
+Homepage: http://llvm.org
+Depends: libllvm3.6-clang, libllvm3.6-llvm-3.6, libllvm3.6-llvm-3.6.0, libllvm3.6-lto
+Source: ti-llvm3.6_3.6.bb

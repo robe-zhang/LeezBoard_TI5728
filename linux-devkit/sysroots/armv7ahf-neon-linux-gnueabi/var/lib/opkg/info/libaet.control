@@ -1,0 +1,12 @@
+Package: libaet
+Version: 4.19.0.0-r0.0
+Description: TI Emulation CTools AET library
+ The AETLIB library provides programmatic access to the Advanced Event
+ Triggering capability on C6x processor cores
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: am57xx_evm
+OE: libaet
+Source: libaet_git.bb

@@ -1,0 +1,13 @@
+Package: nativesdk-cmake
+Version: 3.6.1-r0.0
+Description: Cross-platform, open-source make system
+ Cross-platform, open-source make system.
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: x86_64-nativesdk
+OE: nativesdk-cmake
+Homepage: http://www.cmake.org/
+Depends: nativesdk-libarchive (>= 3.2.2), nativesdk-libc6 (>= 2.24), nativesdk-libcurl4 (>= 7.50.1), nativesdk-libexpat1 (>= 2.2.0), nativesdk-libgcc1 (>= linaro-6.2), nativesdk-libstdc++6 (>= linaro-6.2), nativesdk-libz1 (>= 1.2.8)
+Source: cmake_3.6.1.bb
